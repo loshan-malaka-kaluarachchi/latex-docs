@@ -1,0 +1,69 @@
+\documentclass[11pt]{article}
+\parindent 0px
+\usepackage{float}
+\usepackage{amsfonts,amsmath,amssymb}
+\pagestyle{empty}
+
+
+\begin{document}
+
+%$$\left( \frac{1}{1 + \left( \frac{1}{1 + x} \right) } \right)$$
+
+Tables:\\
+
+%Table 1
+\begin{tabular}{|c||c|c|c|c|c|}
+\hline
+$x$ &1&2&3&4&5 \\ 
+\hline
+$f(x)$ &10&11&12&13&14 \\
+\hline
+\end{tabular}
+
+\vspace{1 cm}
+\begin{table}[H]
+\centering
+\def\arraystretch{1.5}
+%Table 2
+\begin{tabular}{|c||c|c|c|c|c|}
+\hline
+$x$ &1&2&3&4&5 \\
+\hline
+$f(x)$ &$\frac{1}{2}$&11&12&13&14 \\ 
+\hline
+\end{tabular}
+\caption{These values represent the function $f(x)$.}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{The realtionship between $f$ and $f'$.}
+\def\arraystretch{1.5}
+%Table 2
+\begin{tabular}{|l|p{3 in}|}
+\hline
+$f(x)$ &$f'(x)$ \\
+\hline
+$x>0$ &The function $f(x)$ is increasing.The function $f(x)$ is increasing.The function $f(x)$ is increasing \\ 
+\hline
+\end{tabular}
+\end{table}
+
+Arrays:
+\begin{align}
+5x^2 - 9 &= x +3\\
+5x^2 -x -12 &= 0
+\end{align}
+
+\begin{align}
+5x^2 - 9 &= x +3\\
+5x^2 -x -12 &= 0
+\end{align}
+
+\begin{align*}
+5x^2 - 9 &= x +3\\
+5x^2 -x -12 &= 0\\
+&=12+x-5x^2
+\end{align*}
+
+\end{document}

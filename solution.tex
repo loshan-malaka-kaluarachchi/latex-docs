@@ -1,0 +1,96 @@
+\documentclass[12pt]{article}
+%\pagestyle{empty}
+\title{Equations from the parametric form of the unit circle}
+\author{\null}
+\date{\null}
+\parindent 0px
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{graphicx}
+\usepackage{float}
+
+
+\begin{document}
+\maketitle
+Consider the parametric equations for $x$ and $y$.
+\\
+\begin{align}
+x &= \cos \theta \\
+y &= \sin \theta 
+\end{align}
+
+\begin{figure}[H]
+\begin{center}
+	\includegraphics[scale=0.12]{desmos-graph.png}
+	\caption{Unit Circle}
+\end{center}
+\end{figure}
+Next equations (1) and (2) are differentiated
+with respect to $t$.
+
+\begin{align*}
+\frac{dx}{dt} = -\sin\theta \cdot \frac{d\theta}{dt} \Longrightarrow \dot{x} = -\, \omega\cdot\sin\theta
+\end{align*}
+\\
+\begin{align*}  
+\frac{dy}{dt} = \cos\theta \cdot \frac{d\theta}{dt} \Longrightarrow \dot{y} = \omega\cdot\cos\theta
+\end{align*}
+\\
+\\
+Hence the equations for $\dot{x}$ and $\dot{y}$ are found
+and also note that $\dfrac{d\theta}{dt}$ is replaced by $\omega$. \\
+\begin{align}
+\dot{x} &= - \, \omega \cdot \sin \theta \\
+\dot{y} &= \omega \cdot \cos \theta 
+\end{align}
+\\ 
+Equations (3) and (4) are differentiated again to obtain $\ddot{x}$ and $\ddot{y}$.
+
+\begin{align*}
+\ddot{x} &= - \, \frac{d\omega}{dt} \cdot \sin \theta - \omega^{2} \cos \theta   
+\end{align*}
+
+\begin{align*}
+\ddot{y} &= \frac{d\omega}{dt} \cdot \cos \theta - \omega^{2}\sin \theta   
+\end{align*}
+
+This time $\dfrac{d^{2}\theta}{dt^{2}}$ is replaced by $\alpha$.
+
+\begin{align}
+\ddot{x} &= -\alpha \cdot \sin \theta - \omega^{2} \cdot \cos \theta \\
+\ddot{y} &= \alpha \cdot \cos \theta - \omega^{2} \cdot \sin \theta
+\end{align}
+\\
+Relationships for $\sin \theta$ and $\cos \theta$.\\[0.5cm]
+From equations $(1)$, $(2)$, $(3)$ and $(4)$:
+$$\sin \theta = y = -\dfrac{\dot{x}}{\omega} $$
+$$\cos \theta = x =\dfrac{\dot{y}}{\omega} $$
+\\
+$(5)^2 + (6)^2 :$
+\begin{align*}
+\left(\ddot{x}\right)^{2}+\left(\ddot{y}\right)^{2} &= \left( \alpha \sin \theta + \omega^{2}\cos \theta \right)^{2} + \left( \alpha \cos \theta - \omega^{2}\sin \theta \right)^{2}\\
+ 													&= \alpha^{2}\sin^{2}\theta + 2\alpha \omega^{2}\sin \theta \cos \theta + \omega^{4} \cos^{2} \theta \\
+ 													&  \hspace{0.3 in} + \alpha^{2} \cos^{2} \theta - 2 \alpha \omega^{2} \sin \theta \cos \theta + \omega^{4}\sin^{2}\theta\\
+ 													&= \alpha^2 + \omega^4\\
+\end{align*}
+
+\begin{align}
+\therefore \left(\ddot{x}\right)^{2}+\left(\ddot{y}\right)^{2} &= \alpha^2 + \omega^4
+\end{align}
+\\
+Substituting $\cos\theta$ and $\sin\theta$ in equation $(5)$ terms of $x$.
+$$\ddot{x} = -\alpha \left(- \frac{\dot{x}}{\omega} \right) - \omega^{2} \left( x \right)\\$$
+
+\begin{align}
+\ddot{x} = \frac{\alpha}{\omega}\dot{x} - \omega^{2} x
+\end{align}
+\\
+Substituting $\cos\theta$ and $\sin\theta$ in equation $(6)$ terms of $y$.
+$$\ddot{y} = \left(\frac{\alpha}{\omega}\right)\dot{y} - \omega^{2}(y)$$
+
+\begin{align}
+\ddot{y} = \frac{\alpha}{\omega}\dot{y}-\omega^{2}y
+\end{align}
+
+
+
+\end{document}

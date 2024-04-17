@@ -1,0 +1,47 @@
+\documentclass[a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\begin{document}
+		\setlength{\parindent}{0pt}
+		Hello viewers,
+		This is an example about how to use styles in TikZ.\\
+		The following code is used for generating the chart shown below.
+		
+		\vspace{0.5in}
+	\begin{center}
+	\begin{tikzpicture}[
+	%Defining styles
+	circular_node/.style={circle,draw=green!50,fill=green!20,minimum size=7mm,ultra thick,},
+	red_box_node/.style={rectangle,draw=red!50,fill=red!20,minimum size=7mm,ultra thick,rounded corners},
+	blue_box_node/.style={rectangle,draw=blue!50,fill=blue!20,minimum size=7mm,ultra thick,rounded corners},
+	big_box_node/.style={rectangle,draw=black,fill=gray!10,minimum size=14mm,ultra thick,rounded corners,scale=2},	
+	]
+	
+	%Implementing the styles
+	
+	\node[circular_node] 	(Start)							{Start word};
+	\node[red_box_node]		(Step_1)	[below=of Start]	{Step 1};
+	\node[blue_box_node]	(Step_2)	[below=of Step_1]	{Step 2};
+	\node[blue_box_node]	(Outer)		[left=of Step_2]	{Outer};
+	
+	
+	%Drawing the arrows
+	\draw[->] (Start.south) -- (Step_1.north);
+	\draw[->] (Step_1.south) -- (Step_2.north);
+	\draw[<->] (Outer.east) -- (Step_2.west);
+	
+	
+	\begin{pgfonlayer}{background}
+		\filldraw[fill=black!30,draw=red!10] (0,0)
+rectangle (4,4);
+	
+	\end{pgfonlayer}
+	
+	\end{tikzpicture}
+	\end{center}
+\end{document}

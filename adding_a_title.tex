@@ -1,0 +1,39 @@
+\documentclass[12pt]{article}
+\parindent 0pt
+\usepackage{float}
+\pagestyle{empty}
+\title{Tables}
+\author{Charlie Watts}
+\date{\null}
+
+\begin{document}
+\maketitle
+%$$\left( \frac{1}{1 + \left( \frac{1}{1 + x} \right) } \right)$$
+
+Tables:\\
+
+%Table 1
+\begin{tabular}{|c||c|c|c|c|c|}
+\hline
+$x$ &1&2&3&4&5 \\ 
+\hline
+$f(x)$ &10&11&12&13&14 \\
+\hline
+\end{tabular}
+
+\vspace{1 cm}
+\begin{table}[H]
+\centering
+\def\arraystretch{1.5}
+%Table 2
+\begin{tabular}{|c||c|c|c|c|c|}
+\hline
+$x$ &1&2&3&4&5 \\
+\hline
+$f(x)$ &$\frac{1}{2}$&11&12&13&14 \\ 
+\hline
+\end{tabular}
+\caption{These values represent the function $f(x)$.}
+\end{table}
+
+\end{document}

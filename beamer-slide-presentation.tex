@@ -1,0 +1,86 @@
+\documentclass{beamer}
+
+\usetheme{Warsaw}
+
+%Title page details
+\title[Short title]{Your title here}
+\subtitle{Subtitle Here}
+\institute{Institute}
+\author{Author}
+\date{\today}
+\logo{\large \LaTeX{}}
+
+%Document environment
+\begin{document}
+	
+	%Frame for the title page.
+	\begin{frame}
+		\titlepage
+	\end{frame}
+	
+	%Remove logo for the rest of the frames.
+	\logo{}	
+	%Remove dates for the rest of the frames.
+	\date{}
+
+	%Outline frame/table of contents.
+	\begin{frame}{Outline}
+		\tableofcontents
+	\end{frame}	
+	
+	%Lists frame.
+	\section{Lists in Beamer slides}
+		\begin{frame}{Lists in Beamer slides}
+	
+			Hello, This is an unordered list:
+			\begin{itemize}
+				\item First item.
+				\item Second item.
+				\item Third item.	
+			\end{itemize}
+		
+			And this is an ordered list:
+			\begin{enumerate}
+				\item First item.
+				\item Second item.
+				\item Third item.		
+			\end{enumerate}
+		
+		\end{frame}
+
+	%Blocks frame.
+	\section{Blocks in Beamer slides}
+		\begin{frame}{Blocks in Beamer slides}
+			%Standard block.
+			\begin{block}{Standard Block}
+				This is a standard block.
+			\end{block}
+		
+			%Alert block.
+			\begin{alertblock}{Alert Block}
+				This block represents an alert message.
+			\end{alertblock}
+		
+			%Example block.
+			\begin{exampleblock}{Example Block}
+				This block can be used to give examples.
+			\end{exampleblock}
+		\end{frame}
+
+	%List of themes frame.
+	\section{List of available themes}
+		\begin{frame}{List of available themes}
+		Here is a list of preset themes in \LaTeX{}.
+			\begin{block}{List of themes}
+				\begin{enumerate}
+					\item default.
+					\item AnnArbor.
+					\item Antibes.
+					\item Bergen.
+					\item Berkeley.
+					\item Berlin
+				\end{enumerate}							
+			\end{block}
+		\end{frame}
+		
+\end{document}
