@@ -1,0 +1,2154 @@
+\documentclass[a4paper,12pt]{article}
+%\pagestyle{plain}
+\usepackage{subcaption}
+\usepackage{array}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{gensymb}
+\usepackage{tabularx}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage[T1]{fontenc}
+\renewcommand{\rmdefault}{ptm}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usepackage{layout}
+\usepackage[margin=1in]{geometry}
+\usepackage{natbib}
+%\usepackage{apacite}
+\pagenumbering{arabic}
+\parindent 0pt
+%\usepackage{fontspec}
+%\setmainfont{Times New Roman}
+
+
+
+
+\begin{document}
+
+	%Cover page
+	
+	\begin{titlepage}
+		\begin{center}
+		
+			%Top 24.88pts (24pts)
+			\begin{huge}
+				{\bf
+				National Apprentice \& Industrial \\
+				\smallskip
+				Training Authority
+				}
+			\end{huge}
+			
+			\vspace{1cm}
+			
+			%Center 20.74pts (20pts)
+				\begin{LARGE}
+					{\bf
+						Report on Industrial Training
+					}
+				\end{LARGE}
+			
+			\vspace{1cm}
+			 
+				%At 17.28pts (16pts)
+				\begin{Large}
+					{\bf
+						At
+					}
+				\end{Large}
+			
+			\vspace{1cm}
+				
+				%Company 20.74pts (20pts)
+				\begin{LARGE}
+					{\bf
+						Celogen Lanka (PVT) LTD\\
+						
+						Industrial Park\\
+						\vspace{0.4cm}
+						Kandy
+					}
+				\end{LARGE}
+				
+				
+			\vspace{2cm}			
+			
+			%Logo Cinec
+			
+				\begin{figure}[H]
+					\begin{center}
+						\includegraphics[scale=0.4]{CINEC_Campus_logo.png}
+					\end{center}
+				\end{figure}
+			
+			%Logo stop
+			
+			\vspace{2cm}
+				
+			%Bottom 17.28pts (16pts)
+			\begin{Large}
+				{\bf
+					Colombo International Nautical Engineering College
+					\\
+					\vspace{0.4cm}
+					Malabe
+				}
+			\end{Large}
+		\end{center}
+	
+			%BottomLeft 14.4pts
+			\vspace{2cm}
+			\begin{large}
+				\begin{flushleft}
+					\begin{tabular}{lll}
+						Name 			& : & Loshan Malaka Kaluarachchi \\
+						Student Number 	& : & 1731377 \\
+						Course 			& : & Bachelor of Engineering(Hons) \\
+						Field 			& : & Mechatronics \\
+						Period 			& : & 01/08/2022 to 01/02/2023 (06 months)\\
+					\end{tabular}
+				\end{flushleft}
+			\end{large}
+	\end{titlepage}
+	
+	\pagenumbering{gobble}
+	
+	\newpage
+	%Certification
+	\begin{center}
+		\begin{Large}
+			{\bf
+				IDENTIFICATION OF TRAINEE
+			}
+		\end{Large}
+	\end{center}
+	\vspace{1cm}
+	I, L.M. Kaluarachchi remain truthful to the fact that the following body of work is the result of 06 months of internship training undergone by me from August 1st, 2022 to February 1st, 2023 at Celogen Lanka (Pvt) Ltd, Pallekele.\\
+	
+	   			\begin{flushleft}
+					\begin{tabular}{lll}
+						Name 				& : & Loshan Malaka Kaluarachchi \\
+											& 	& \\
+						Address				& : & 7F7, NHS Raddolugama, Seeduwa\\
+						& 	& \\
+						Student Number 		& : & 1731377 \\
+						&	& \\
+						Registration Number	& :	& M19970313002\\
+						& 	& \\
+						Course 				& : & Bachelor of Engineering(Hons) \\
+						& 	& \\
+						Field 				& : & Mechatronics \\
+						&	& \\
+						Establishment of Training & : & Celogen Lanka(Pvt) Ltd, Pallekele\\
+						&	& \\
+						Training Duration	& : & 06 Months\\
+						&	& \\
+						Period of Training				& : & 01/08/2022 to 01/02/2023\\
+					\end{tabular}
+				\end{flushleft}
+			\vspace{4cm}
+				\begin{center}
+					\begin{tabular}{c p{5cm} c}
+						 ........................ &  & ................................................ \\
+						 &  & \\
+						 Date &  & Signature of Trainee \\
+						 &  & \\
+						 &  & \\
+						 &  & \\
+						 &  & \\
+						  ........................ &  & ................................................ \\
+						 &  & \\
+						 Date &  & Signature of Engineering Manager \\
+						 &  & \\
+					\end{tabular}
+				\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+	\newpage
+	%Acknowledgement
+	\section*{Acknowledgement}
+	 I would like to give my gratitude to Mr Nadarajah Vengadasalam, Chairman and 
+	 Mr Sathyamoorthi Lydurai, Administrative Manager for giving this opportunity to have my internship in Celogen Lanka (Pvt) Ltd.
+	 
+	 \vspace{0.5cm}
+	 
+	 I would also like to thank Mr Dilan Niroshana, Chief Engineering Manager and Mr Ram Doss, Assistant Executive Manager for guiding me with there insight, sharing their vast knowledge and expertise throughout my internship.
+	 
+	\vspace{0.5cm}
+	
+	 I wish to thank the technicians, officers and other staff members for all the pleasant memories that I have had with them, and I would like to state that I am honoured to have served with them at Celogen Lanka.
+	 
+\vspace{0.5cm}	 
+	 
+	 Finally, I would like to thank my parents and my family for there enormous support and 
+	 encouragement in helping me overcome many challenges and difficulties.	
+	\newpage
+	%Preface
+	\section*{Preface}
+	This report is the result of six months of training at Celogen Lanka and is a crucial period in giving a broader understanding of the engineering field and its relevance in the workplace and the industry.
+	My time at Celogen Lanka not only gave me practical training but also gave me a new insight into what goes on a management level and how departments interact with each other as one collective unit, how workers and officers work together in making crucial decisions whether it is repairing, maintenance work, re-arrangement, installation of new equipment or even design. 
+	This report is structured into three parts. First starting with the introduction of the company, its products, departments and management structure. Second, my training experience which is then dissected into parts regarding the challenges I faced, triumphs, my creations, mishaps and failures and finally my conclusion as a trainee and how I reflect back on my time at Celogen Lanka.    
+	 
+	\newpage
+	%Table of Contents
+	\begin{large}
+	\tableofcontents
+	\end{large}
+	
+	\newpage
+	%List of figures
+	\listoffigures
+	
+	\newpage
+	%List of tables
+	\listoftables
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%		
+	\newpage
+	\pagenumbering{arabic}
+	\section{Introduction}
+		\subsection{About Celogen Lanka (PVT) LTD}
+			\vspace{1cm}
+			\begin{figure}[H]
+					\begin{center}				
+						\includegraphics[scale=0.3]{logo.png}
+					\end{center}
+					\caption{Celogen Logo}
+					\label{fig:Celogen Logo}
+			\end{figure}
+			
+		Celogen Lanka (Pvt) Ltd was established in 2017 at Pallekele,Kandy and is one of the largest pharmaceutical manufacturing facility in Sri Lanka which has the manufacturing capability of tablets, hard gelatin capsules, soft gelatin capsules and suppositories. They also hold a variety of other business interests in the pharmaceutical industry across the South Asian region which includes the distribution, manufacture and retail of pharmaceutical products.\\
+		Celogen Lanka has been awarded the WHO-GMP(Good Manufacturing Standards) certificate and has been given clearance by the Sri Lankan NMRA(National Medicines Regulatory Authority) for it's manufacturing standards.
+		It has also initiated the process of standardization for obtaining the EU-GMP certificate. 
+		This allows the company to acquire and maintain a foothold in the European market in the foreseeable future. 
+		
+			\subsubsection{Vision}
+		Celogen Lanka is committed to consistently produce and supply best quality pharmaceutical products of affordable prices which are safe and effective for patients and finally in a better quality of life.
+		
+			\subsubsection{Mission}
+			
+			``We believe and emphasize continual improvement in all areas of our functioning to achieve excellence in the health care sector.
+			We set achievable and well defined goals and measure performance periodically against defined standards."
+		
+		\newpage
+			\subsubsection{Products}
+			
+			Celogen Lanka mainly manufacture a variety of pharmaceutical products in the form of tablets,soft gelatine capsules, hard gelatine capsules and suppositories.
+			Celogen Lanka has the capability of manufacturing a wide range of medicines such as Cardiovasculars, Antibiotics, Anti-diabetics, Anti Allergics, Anti Malarials, Gastro Intestinals, Vitamins and Supplements.
+			In addition to manufacturing products under the Celogen brand, they also undertake orders for other brands like Pharma associates ,Bio-vita, Naiveherbs, Cod Rose and government owned SPMC(State Pharmaceutical Manufacturing Corporation).
+			Some products include;	
+				\begin{itemize}
+					\item Metformin tablets
+					\item Vitamin C tablets
+					\item Atorvastatin tablets
+					\item Calcium supplements
+					\item Multi-vitamin capsules
+					\item Ferrous Fumarate(Iron Supplement)
+					\item Cod liver oil capsules
+					\item Omeprazole capsules
+					\item Pregnium F capsules
+					
+				\end{itemize}
+									
+				\begin{figure}[H]
+					\begin{center}				
+						\includegraphics[scale=0.4]{products1.png}
+					\end{center}
+					\caption{Assortment of products}
+					\label{fig:Assortment of products}
+				\end{figure}		
+				
+			\newpage
+				
+		\subsection{Management}
+			\subsubsection{Organizational structure}
+				Celogen Lanka has a hierarchical structure where the company's highest ranking executive also known as the Chief Executive Officer(CEO) stands at the top followed by the Board of Directors, Plant Head and Assistant Plant Head.
+				This level is responsible for the management of the company where important decisions are being made which can steer the future of the company and these decisions are passed down the hierarchy.\\
+								
+					\begin{figure}[H]
+						\begin{center}				
+							\includegraphics[scale=0.6]{Org_Struct.png}
+						\end{center}
+						\caption{Organizational Structure}
+						\label{fig:Organizational Structure}
+					\end{figure}
+					
+					\begin{figure}[H]
+						\begin{center}				
+							\includegraphics[scale=1]{bussiness.png}
+						\end{center}
+						\caption{Bussiness strategy}
+						\label{fig:Bussiness strategy}
+					\end{figure}	
+				
+				
+			\subsubsection{Leave}
+				A common leave plan is given to all it's employees,however employees and trainees who are in their first year of service only have 6 days of annual leave.
+				But once the first year is completed employees have 14 days of annual leave.\\
+				Leave is also given during public holidays however this is subjected to change if the company is behind production schedule or if there is any critical repair or maintenance work.\\
+				\begin{table}[H]
+					\centering
+					\def\arraystrech{1.5}
+						\begin{tabular}{|p{2 in}|p{2 in}|}
+							\hline
+							{\bf Type of leave}			&	{\bf Duration}	\\
+							\hline
+							Annual leave				&	14 days		\\
+							\hline
+							Casual leave				&	07 days		\\
+							\hline
+							Total leave					&	21 days		\\
+							\hline
+							Maternal leave(Mother)		&	06 months	\\
+							\hline		
+							Marriage leave				&	Not more than 3 days	\\	
+							\hline					
+						\end{tabular}
+						\caption{Leave plan}
+						\label{tab:Leave plan}
+					\end{table}
+					
+			\subsubsection{EPF and ETF}
+				
+				\subsubsection*{Employees Provident Fund(EPF)}
+				
+				EPF is a type of long term investment scheme or social security scheme that is given to employees working in the private sector as well as state corporations, this is managed and handled by the Central bank and the Labor department of Sri Lanka.
+				The employers and the employees must allocate a minimum rate of 12\% and 8\% of the member’s monthly salary, respectively.
+				Over time these monthly allocations are cumulatively added to the balance and can be withdrawn by the employee after retirement.   
+				The main purpose of the EPF is to give financial stability to employees during the latter part of their life as gratitude to their service since employees who work in the private sector do not have pensions.\\
+				
+				\subsubsection*{Employees Trust Fund(ETF)}
+				
+				ETF is a type of short term investment scheme that is given to employees in the public and private sector who have provident fund accounts and are not elligible to the government pension scheme.
+			An ammount of 3\% of the employee's monthly salary is allocated and added cumulatively to the fund.
+			The employee can withdraw this cumulative amount after retirement or once after 5 years of service by which they leave or change there employment.
+			    
+			\subsubsection{Welfare and Charity work}
+			
+			Celogen Lanka has always had high concern regarding the welfare of their employees and the communities around them.
+			Therefore they always engage in welfare activities and charity work annually as a way of giving back to the society.
+			
+			\begin{itemize}
+				\item Food
+				\item Arms givings
+				\item Pirith ceremonies
+				\item Distribution of uniforms to it's employees
+				\item Religious festivals
+				\item Providing uniforms
+				\item Donation of stationary to children
+				\item Donations to elder's homes
+				\item Donations to disabled people and children
+				\item Donations to schools
+				\item Free eyesight tests to it's employees			
+			\end{itemize}			 
+			
+			\newpage
+			\subsubsection{Waste Management}
+				Proper waste management is always dealt with promptly since preventing environmental harm is a top priority.
+				Waste such as used masks, used gloves, used head covers, used shoe covers and used polythene bags are categorized and separated and sold for efficient recycling.
+				Electronic waste such as broken VFD's, sensors, door interlock circuits, power supplies, broken UV bulbs and LED lamps are immediately replaced to avoid accumulation. 
+				Waste effluents used during the manufacturing process is monitored, controlled and treated \\
+				before being released to the drainage network, this is done using an Effluent Treatment Plant.\\
+				\\
+				As an example the following SOP shown in table \ref{tab:SOP for Waste Disposal (Department of Microbiology)} gives clear instructions on how to deal with all types of waste produced at the Quality Control lab. \\
+				  
+					\begin{table}[H]
+						\centering
+						\def\arraystretch{1.5}
+						\begin{tabular}{p{3 in}p{3 in}}
+							\hline
+							\multicolumn{2}{c}{{\bf Disposal of Waste - Department of Microbiology}}													\\
+							\hline
+							{\bf Type} 					& {\bf Procedure} 	\\
+							\hline 				
+							Expired Media				& To be discarded as per the medium discarding procedure.									\\
+							\hline
+							Empty Chemical Containers 	& Wash the containers with water, labels should be striked through with a permanent marker and then handed over to Manager Representative/his designee which is then sent to the scrap yard for disposal. 																			\\ 	
+							\hline
+							Paper waste, leftover poly bags and packing material
+				 							& To be handed over to the cleaning service and sent to the  dump yard for disposal 		\\
+							\hline					
+							Broken glassware			& To be collected in the broken glassware bin located in the washing area and hand over to Manager Representative/his designee for disposal.						\\
+							\hline
+							Spilled culture/broken culture tubes/flasks /plates & Disinfect the area using 70\% IPA
+							Cover the area using paper towels and allow the spill to sit with 70\% IPA for 15 minutes. 
+							Spilled culture and surrounding debris should be swept(glass,cotton wool plugs) into a dustpan using paper towels.
+							Clean the area again with 70\% IPA
+							Sterilize used paper towels, gloves, spilled culture, surrounding debris at 151 lbs pressure for 30 minutes at 121\degree C \\
+				
+			\end{tabular}
+			\caption{SOP for Waste Disposal (Department of Microbiology)}
+			\label{tab:SOP for Waste Disposal (Department of Microbiology)}
+			\end{table}
+			
+			\newpage
+			\subsubsection*{Effluent Treatment Plant (ETP)}
+				
+				An important part of the waste management system in Celogen is it's ETP plant.
+				This plant treats the sewage and chemical residue from the factory before being released to the drainage system.
+				The ETP plant is managed and controlled by a third part company within the factory premises.
+								
+			\subsubsection*{Condensate recovery system}
+				
+				The condensate recovery system is used to accumulate and recirculate condensed steam back to the feed water tank.
+				This provides the following benefits; less energy wastage and more steam can be generated more efficiently due to latent heat contained in the system.
+				Tap water from the main supply is first treated in the softwater plant, then the treated softwater is pumped to the feed water tank.
+				The boilers get water from the feed water tank via feed water pumps.
+				The water evaporates into steam and is sent through steam headers.
+				The steam gives off heat through the load representing all the heat excangers and steam coils in the facility.
+				As the steam gives off heat it condenses back into hot water and this  water is recovered using the condensate recovery system before being pumped back to the feed water tank.
+				  
+				
+				\begin{figure}[H]
+					\centering
+					\includegraphics[width=\textwidth]{condensate-recovery.png}
+					\caption{Condensate recovery system at Celogen}
+					\label{fig:condensate-recovery}
+				\end{figure}
+				
+		\newpage	
+		\subsection{Departments}
+		The Departments of Celogen(PVT) Ltd. is structured as follows and each department has its own unique role and qualified staff in order for the company to operate properly.
+					
+				
+						\begin{itemize}
+							\item	Maintenance
+							\item	Production
+							\item	Softgel
+							\item	Packing
+							\item 	Stores
+							\item	Quality Control
+							\item	Quality Assurance
+							\item	Human Resources
+						\end{itemize}
+						
+			\newpage
+			\subsubsection{Maintenance}
+		The maintenance department is a crucial part of the factory since it provides power, heating, cooling, humidity control, maintenance and repair facilities necessary for the plant to operate reliably.
+		\\
+		\\
+		The maintenance department operate mainly around the utility area which consists of the following facilities.
+		\begin{itemize}
+			\item Boilers
+			\item Chillers
+			\item Compressors and Air dryers
+			\item Main Power Supply Panel
+			\item Diesel Generators
+			\item Warm Water and Hot Water Generators
+			\item Dehumidifiers
+			\item Air Handling Units(AHUs)
+			\item Universal Power Supply(UPS)
+			\item Mechanical Repair area
+			\item Mechanical Store
+			\item Electrical Repair area
+			\item Electrical Store
+		\end{itemize}
+		
+		\newpage
+			\begin{figure}[H]
+				\begin{center}				
+					\includegraphics[scale=0.64]{utility_area.png}
+				\end{center}
+				\caption{Utility Area}
+				\label{fig:Utility Area}
+			\end{figure}
+		
+		\newpage	
+			\subsubsection{Production}
+			
+			The production area is divided into three main departments.
+			\begin{itemize}
+				\item Tablet manufacturing
+				\item Hard gel capsule filling
+				\item Softgel capsule manufacture				
+			\end{itemize}
+			
+			The tablet manufacturing and hard gel capsule filling area is further divided into the following sections.
+			
+			\begin{itemize}
+				\item RM Day store(Tablets/Capsules)
+				\item Granulation Rooms
+				\item Granules Stores
+				\item Blending Rooms
+				\item Compression Rooms
+				\item Tablet Stores
+				\item Coating Rooms
+				\item Solution Preparation Rooms
+				\item Inspection Room(Tablets/Capsules)
+				\item Bulk Stores(Tablets/Capsules)
+				\item Capsule Filling Rooms
+				\item Formulation and Development(F{\&}D) 
+			\end{itemize}
+			
+			RM Day stores are rooms used to temporarily store raw materials brought from the main store area which are recorded, organized and labeled into batches which are then used to manufacture tablets and hardgel capsules. Granulation rooms are where the raw materials are mixed according to a recipe. 
+			Each granulation room contains a binder room for binder preparation, this  is added to the mixture in order to produce granules of the right consistency. Granulation rooms also have a rapid mixer granulator machine, a fluid bed dryer machine and a vibro-sifter machine used for sifting.
+			Blending rooms consist of an octagonal blenders which are used for mixing.
+			Compression rooms are where tablets are formed by compressing granules to form tablets.
+			The tablets are formed when a puncher is pneumatically pressed on to a cavity filled with granules.
+			The punching tools are attached to a turret mechanism that spins at a set rpm. Hence thousands of tablets can be produced in an hour.			  
+			The compressed tablets are store temporarily before being sent to coating rooms.
+			Each coating room contains a coating machine and solution preparation room. The coating solution is prepared in the solution preparation room. The tablets are coated which gives the tablet its colour and protects the tablet from disintegrating.
+			The tablets are sent to the inspection room where workers separate tablets with defects. Inspection rooms contain a tablet inspection machine that have a conveyor with rollers that tumble the tablets and allow workers to spot defects.
+			Bulk store rooms are used to store batches of finished tablets and hardgel capsules before being dispatched to the packing area.
+		
+			\subsubsection{Soft Gel}
+			
+			\begin{itemize}
+				\item RM Day Store(Soft Gel)
+				\item Medicament Preparation area
+				\item Gelatine Preparation area
+				\item Encapsulation Soft Gel
+				\item Drying Tunnel
+				\item Soft Gel Quarantine
+				\item Polishing Room
+				\item Inspection Room
+				\item Bulk Store(Soft Gel)
+				\item Suppository Manufacturing
+			\end{itemize}
+			
+			
+			\subsubsection{Packing}
+		
+			\begin{itemize}
+				\item Bulk Packing 
+				\item Strip Packing
+				\item Blister Packing
+				\item Suppository Filling
+				\item Foil Store
+				\item Secondary Packing Hall
+			\end{itemize}
+			
+			\subsubsection{Stores}
+			The raw materials needed for tablet manufacture, Hard Gel capsule filling and Soft Gel \\ manufacture are all stored in this facility.\\
+			The store area is partitioned into the following areas.
+			
+			\begin{itemize}
+				\item Quarantine Store
+				\item RM(Raw Material) stores
+				\item Sampling Booth
+				\item Finished Goods Store
+				\item Re-call room
+				\item SPM(Secondary Packing Material) store
+				\item Dispensing area
+			\end{itemize}
+
+		\newpage
+		\subsection{Safety practises}
+			\subsubsection{Safety training}		
+			All employees are subjected to a safety program before being brought to duty. \\
+			This is done in order to protect the employees from serious injury. \\
+			Key areas of the program include.
+			\begin{itemize}
+				\item	Types of safety signs and safety colours.
+				\item	Use of Personal Protective Equipment.
+				\item	Prevention of accidents 
+				\item 	Fire safety						
+			\end{itemize}
+				
+			There are several types of safety signs.
+			\begin{itemize}
+				\item Mandatory.
+				\item Warning.
+				\item Danger.
+				\item Fire safety.
+				\item Emergency.
+			\end{itemize}
+								 
+			Mandatory signs give specific instructions to vistors, workers and staff as they enter the\\ production area or utility area.
+			These signs can be identified by their blue and white colour scheme.\\
+			Some examples of these signs include mandatory eye protection, hearing protection, head \\protection etc. 
+			\begin{figure}[H]
+				\begin{center}				
+					\includegraphics[scale=0.35]{mandatory-construction-signs.jpg}
+				\end{center}
+				\caption{Mandatory signs}
+				\label{fig:Mandatory signs}
+			\end{figure} 
+				
+  			\newpage
+			 Warning signs indicate or warn hazards present in an area.\\
+			 Warning signs commonly have black symbols on a triangular shaped yellow background.
+				 
+			\begin{figure}[H]
+				\begin{center}				
+					\includegraphics[scale=1]{warning-construction-signs.png}
+				\end{center}
+				\caption{Warning signs}
+				\label{fig:Warning signs}
+			\end{figure} 
+				
+			Danger signs warn or indicate potential life threatening hazards or goods, they have black text with a red ovel on top with the word ``DANGER" written in white text.
+			\begin{figure}[H]
+				\begin{center}				
+					\includegraphics[scale=1]{danger-construction-signs}
+				\end{center}
+				\caption{Danger signs}
+				\label{fig:Danger signs}
+			\end{figure} 
+				
+			\newpage
+			Fire safety signs are used to indicate the location of fire extinguishers and other equipment in the event of a fire.
+			These signs have a red and white colour palette in order to grab the attention of any individual.
+				
+			\begin{figure}[H]
+				\begin{center}				
+					\includegraphics[scale=0.4]{fire-emergency.jpg}
+				\end{center}
+				\caption{Fire safety signs}
+				\label{fig:Fire safety signs}
+			\end{figure}  
+				
+			In conjunction with fire safety, emergency signs are used to indicate emergency exits that allow workers and staff to exit safely in case of a fire or any other emergency.
+			These signs have white symbols over a green background.  	
+			\begin{figure}[H]
+				\begin{center}				
+					\includegraphics[scale=0.15]{emergency.jpg}
+				\end{center}
+				\caption{Emergency signs}
+				\label{fig:Emergency signs}
+			\end{figure}
+			
+			\newpage
+			\subsubsection{Safety helmet colour code}
+				
+				Colour codes are used as per OSHA(Occupational Safety and Health Administration) standards in helmets for identification purposes at the work site.
+				
+				\begin{figure}[H]
+					\begin{center}				
+						\includegraphics[scale=0.15]{helmet-colour-code.jpg}
+					\end{center}
+					\caption{Safety helmet colour code}
+					\label{fig:safety-helmet-colour-code}
+				\end{figure}			
+			
+			\newpage
+			\subsubsection{Additional colour codes}
+				
+				Barricade tapes, Warning labels and signs are used as per OSHA requirements in Celogen Lank as shown in figure \ref{fig:osha-barricade-tape-color-combinations}.
+				
+				\begin{figure}[H]
+					\begin{center}				
+						\includegraphics[scale=0.3]{osha-barricade-tape-color-combinations.png}
+					\end{center}
+					\caption{OSHA barricade tape colour combinations}
+					\label{fig:osha-barricade-tape-color-combinations}
+				\end{figure}				
+				
+				\newpage
+				\subsubsection{Personal Protective Equipment(PPE)}
+					
+					PPE is an important part of the attire worn by workers, officer and visitors inside the factory premises especially in hazards and sensitive environments.
+					PPE is worn in order to protect the user from imminent danger or hazards that can cause lethal or deadly injury.
+					Hence it was strictly advised that all workers, officers and visitors be wearing proper PPE at all times inside the factory.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%				
+					\subsubsection*{Safety Head gear}
+						
+						Head gear is designed to protect the head of its user from falling debris, tools and other sharp or blunt objects especially when going under duct work or pipeline where there is very little headroom.
+						Helmets can also reduce the risk of head trauma caused during a fall from a small height.
+						Workers, visitors and staff are always encouraged to wear helmets in the utility area due to the presence of heavy machinery and maintenance work.\\
+								
+						\begin{figure}[H]
+							\begin{center}				
+								\includegraphics[scale=0.15]{helmet.jpg}
+							\end{center}
+							\caption{Safety Helmet}
+							\label{fig:Safety Helmet}
+						\end{figure}
+						
+						Face shields are used to protect technicians from harmful particles, shards and dust flown away at high speeds during cutting, grinding, drilling, sanding and polishing operations.\\
+						These shields are also worn in combination with goggles and welding helmets.\\
+
+						\begin{figure}[H]
+							\begin{center}				
+								\includegraphics[scale=0.08]{face-shield.png}
+							\end{center}
+							\caption{Face shield}
+							\label{fig:Face shield}
+						\end{figure}
+						
+						Welding helmets are used to protect the users eyes and face from sparks and Ultra Violet radiation produced during welding.
+						Avoiding the use of welding helmets for prolonged periods time can cause eye fatigue, arc eye or burns caused by exploding hot sparks.   
+						There were two types of welding helmets used in Celogen; one is a standard helmet with a dark shade and the other is a battery powered helmet with an auto darkening shade.\\
+						This helps the welder see there work when they are not welding.
+						The sensitivity of the auto darkening shade can be adjusted and controlled using a control knob at the side of the helmet in figure \ref{fig:Welding helmet}.\\
+				A tightening screw is provided behind the helmet so it can be worn comfortably according to the size of the head of the user. 		
+						
+						\begin{figure}[H]
+							\centering				
+							\includegraphics[scale=0.8]{welding-helmet.png}
+							\caption{Welding helmet}
+							\label{fig:Welding helmet}
+						\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+					\subsubsection*{Safety Eye wear}
+					
+						\begin{figure}[H]
+							\centering				
+								\includegraphics[scale=0.35]{safety-goggles.jpg}
+							
+							\caption{Safety goggles}
+							\label{fig:safety-goggles}
+						\end{figure}
+						
+						\begin{figure}[H]
+							\centering				
+								\includegraphics[scale=0.2]{safety-glasses.png}
+							
+							\caption{Safety glasses}
+							\label{fig:safety-glasses}
+						\end{figure}
+											
+					\subsubsection*{Ear Protection}
+						\begin{figure}[H]
+						\centering
+							\begin{subfigure}{0.5\textwidth}
+							\centering				
+							\includegraphics[width=0.5\textwidth]{ear-muff.jpg}
+							\caption{Ear muffs}
+							\label{subfig:ear-muff}
+							\end{subfigure}
+							\hfill
+							\begin{subfigure}{0.5\textwidth}
+							\centering				
+							\includegraphics[width=0.5\textwidth]{ear-plugs.png}
+							\caption{Ear plugs}
+							\label{subfig:ear-plugs}
+							\end{subfigure}
+							\caption{Ear protection}
+							\label{fig:ear-protection}
+						\end{figure}
+						
+					\subsubsection*{Respirators}
+					
+						\begin{figure}[H]
+							\centering				
+								\includegraphics[width=0.5\textwidth]{respirator-mask.jpg}
+							\caption{Respirator mask}
+							\label{fig:respirator-mask}
+						\end{figure}
+					\newpage
+					\subsubsection*{Gloves}
+						\begin{figure}[H]
+							\begin{subfigure}{.5\textwidth}	
+								\centering								
+								\includegraphics[width=0.5\textwidth]{disposable-surgical-gloves.jpg}
+							\caption{Disposable surgical gloves}
+							\label{subfig:disposable-surgical-gloves}
+							\end{subfigure}
+							\hfill
+							\begin{subfigure}{.5\textwidth}
+								\centering		
+								\includegraphics[width=0.5\textwidth]{heat-resistant-safety-gloves.jpg}
+							\caption{Heat resistant safety gloves}
+							\label{subfig:heat-resistant-safety-gloves}
+							\end{subfigure}
+							\hfill
+							\begin{subfigure}{0.5\textwidth}
+							\centering				
+								\includegraphics[width=0.5\textwidth]{welding-gloves.jpg}
+							\caption{Welding gloves}
+							\label{subfig:welding-gloves}
+							\end{subfigure}
+							\hfill
+							\begin{subfigure}{0.5\textwidth}
+							\centering				
+								\includegraphics[width=0.5\textwidth]{chemical-resistant-gloves.jpg}
+							\caption{Chemical resistant safety gloves}
+							\label{subfig:chemical-resistant-safety-gloves}
+							\end{subfigure}
+							\caption{Types of gloves}
+							\label{fig:types-of-gloves}
+						\end{figure}
+						
+					\subsubsection*{Welding apron}
+					
+						\begin{figure}[H]
+							\centering
+							\includegraphics[width=0.5\textwidth]{leather-welding-apron.png}
+							\caption{Welding apron}
+							\label{fig:welding-apron}
+						\end{figure}
+					
+					\newpage
+					\subsubsection*{Foot wear}
+						
+						\begin{figure}[H]
+						\centering
+							\begin{subfigure}{0.5\textwidth}
+							\centering				
+								\includegraphics[width=0.5\textwidth]{safety-shoes.png}
+							\caption{Safety shoes}
+							\label{subfig:safety-shoes}
+							\end{subfigure}
+							\hfill
+							\begin{subfigure}{0.5\textwidth}
+							\centering				
+								\includegraphics[width=0.5\textwidth]{chemical-resistant-boots.jpg}
+							\caption{Chemical resistant boots}
+							\label{subfig:chemical-resistant-boots}
+							\end{subfigure}
+							\caption{Types of footwear}
+							\label{fig:footwear}
+						\end{figure}
+						
+					\subsubsection*{Overall}
+					
+						\begin{figure}[H]
+							\centering				
+								\includegraphics[scale=0.6]{overall.png}
+							\caption{Overall}
+							\label{fig:overall}
+						\end{figure}
+						
+					\subsubsection*{Labcoats}
+					
+						\begin{figure}[H]
+							\centering				
+								\includegraphics[scale=0.8]{labcoat.png}
+							\caption{Labcoat}
+							\label{fig:labcoat}
+						\end{figure}
+						
+					\subsubsection*{Safety Harness}
+						
+						\begin{figure}[H]
+							\centering				
+								\includegraphics[scale=1]{safety-harness.jpg}
+							\caption{Safety harness}
+							\label{fig:safety-harness}
+						\end{figure}						
+										
+					\subsubsection*{High visibility vest}
+					
+						\begin{figure}[H]
+							\centering				
+								\includegraphics[scale=0.15]{high-visibility-vest.jpg}
+							\caption{High visibility vest}
+							\label{fig:high-visibility-vest}
+						\end{figure}
+						
+					\subsubsection*{Shoe covers}
+					
+						\begin{figure}[H]
+							\centering				
+								\includegraphics[scale=0.3]{shoe-cover.png}
+							\caption{Shoe covers}
+							\label{fig:shoe-covers}
+						\end{figure}
+						
+					\subsubsection*{Head covers}
+					
+						\begin{figure}[H]
+							\centering				
+								\includegraphics[scale=0.7]{head-cover.png}
+							\caption{Head covers}
+							\label{fig:head-covers}
+						\end{figure}				
+						
+\newpage
+\section{Training Experience}
+		\subsection{Tools and Equipment}
+			\subsubsection{Instruments}
+				\subsubsection*{Steel Rule}
+					Steel rules were used to measure distances between two points.
+					It is extensively used when sketching lines on a work-piece.
+					Technicians often take measurement in millimetres, centimetres and inches using these rulers. 
+						\begin{figure}[H]
+							\centering		
+							\includegraphics[width=0.4\textwidth]{steel-rule.png}		
+							\caption{Steel rule}
+							\label{fig:steel-rule}
+						\end{figure}
+						
+				\subsubsection*{Measuring tape}
+					Measuring tapes are used when measuring large distances, from a few metres upto 50m.\\
+					Measurements are usually taken in centimetres, metres and feet. 
+						\begin{figure}[H]
+							\centering				
+								\includegraphics[width=0.4\textwidth]{measuring-tape.png}
+							\caption{Measuring tape}
+							\label{fig:measuring-tape}
+						\end{figure}
+						
+				\subsubsection*{Set squares}
+					Set squares are used to construct perpendicular lines and 45 degree angles on work pieces.\\
+					Set squares used in the workshop are made of steel for durability and rigidity and they come in various sizes as shown in figure \ref{fig:set-squares}.
+					Combination squares like the one in figure \ref{fig:combination-set-square} are also used in addition to set set squares since it has a ruler which can be fastened using a tightening screw and a spirit level to control tilting of the set square in order to reduce the uncertainty of a measurement.
+					
+						\begin{figure}[H]
+							\centering				
+							\includegraphics[width=0.5\textwidth]{set-square.png}	
+							\caption{Set squares}
+							\label{fig:set-squares}
+						\end{figure}
+						
+						\begin{figure}[H]
+							\centering				
+								\includegraphics[width=0.5\textwidth]{combination-set-square.png}
+							\caption{Combination set square}
+							\label{fig:combination-set-square}
+						\end{figure}
+						
+				\subsubsection*{Vernier Calliper}
+					Vernier callipers like the one in figure \ref{fig:vernier-calliper} are used to make precise measurements of dimensions of a work piece.
+					Measurements are taken in inches or millimetres.
+					The distances between the internal jaws, external jaws and the stem are equal hence making it a versatile instrument.
+					External jaws can be used to measure the outer diameters,
+					Internal jaws are used to measure internal diameters and the stem  is convenient in measuring depths. 
+						\begin{figure}[H]
+							\centering				
+							\includegraphics[scale=0.5]{vernier-calliper.png}
+							\caption{Vernier calliper}
+							\label{fig:vernier-calliper}
+						\end{figure}
+						
+				\subsubsection*{Spirit level}
+					Spirit levels are used to determine the straightness of flat surfaces or vertical surfaces and can be used to verify whether objects are properly aligned.
+				 
+						\begin{figure}[H]
+							\centering			
+							\includegraphics[scale=0.4]{spirit-level.png}				
+							\caption{Spirit level}
+							\label{fig:spirit-level}
+						\end{figure}				
+				
+				\newpage
+				\subsubsection*{UV meter}
+					UV meters also known as ultraviolet light intensity meters are used to determine the light intensity of UV light sources.
+					UV light bulbs are used in pass boxes in the production area to sterilize material, therefore the light intensity of these lamps are monitored as part of the preventive maintenance schedule in order to replace defective bulbs. 
+						\begin{figure}[H]
+							\centering				
+							\includegraphics[scale=0.5]{uv-meter.png}
+							\caption{UV meter}
+							\label{fig:uv-meter}
+						\end{figure}				
+				
+				\subsubsection*{Tachometer}
+					The tachometer is a measuring device used to measure the angular velocity of a shaft, gear, wheel or disc.
+					A small shaft is situated on the top of the device that rotated when in contact with a spinning object, this is then picked up by the tachometer and the speed is displayed in rpm or rotations per minute. 
+						\begin{figure}[H]
+							\centering				
+							\includegraphics[width=0.5\textwidth]{tachometer.png}
+							\caption{Tachometer}
+							\label{fig:tachometer}
+						\end{figure}					
+									
+				\subsubsection*{Thermometers}	
+					Thermometers and temperature gauges are used to measure temperature in degrees celcius or degrees fahrenheit.\\
+					Temperature gauges like the one in figure \ref{fig:temperature-gauge} were prominently used in the chill water, steam and hot water piping network inside the factory since these systems do not have a large temperature range.\\
+					
+					Laser thermometers shown in figure \ref{fig:laser-thermometer} on the other hand were used for measuring extreme temperatures like for instance chamber of the boiler.
+					This device is also convenient in measuring temperatures in hard to reach spaces. 
+					
+						\begin{figure}[H]
+							\centering				
+							\includegraphics[scale=0.4]{temperature-gauge.png}
+							\caption{Temperature gauge}
+							\label{fig:temperature-gauge}
+						\end{figure}
+						
+						\begin{figure}[H]
+							\centering				
+							\includegraphics[scale=0.3]{laser-thermometer.png}
+							\caption{Laser thermometer}
+							\label{fig:laser-thermometer}
+						\end{figure}
+						
+				\subsubsection*{Temperature sensors}
+					Temperature sensors are used to measure and send temperature data as a signal to a controller or system.\\
+					The most common temperature sensor type was the Resistance Temperature Detector(RTD) sensor.
+					These sensors are passive devices which means they do not produce a signal using an external power source.
+					These sensors are fitted in the duct work of the factory which then sends temperature data to the Building Managament System(BMS).
+					Hence allowing the technicians to determine and control the temperature of every room in the production area.      
+						\begin{figure}[H]
+							\centering			
+							\includegraphics[scale=0.5]{rtd-sensor.png}
+							\caption{RTD sensor}
+							\label{fig:rtd-sensor}
+						\end{figure}
+						
+						\begin{figure}[H]
+							\centering				
+							\includegraphics[scale=0.8]{rtd-sensor-large.png}
+							\caption{Indsutrial type RTD sensor}
+							\label{fig:rtd-sensor-large}
+						\end{figure}
+						
+						\begin{figure}[H]
+							\centering			
+							\includegraphics[scale=0.8]{rtd-large-diagram.png}
+							\caption{RTD sensor cross section}
+							\label{fig:rtd-sensor-diagram}
+						\end{figure}
+															
+				\subsubsection*{Decibel meter}
+					Decibel meters are used to measure the loudness of sounds and vibration in equipment.\\
+										 
+						\begin{figure}[H]
+							\centering				
+							\includegraphics[scale=0.2]{decibel-meter.png}
+							\caption{Decibel meter}
+							\label{fig:decibel-meter}
+						\end{figure}
+				
+				\newpage		
+				\subsubsection*{Electronic balance}
+					Electronic balances are used throughout the manufacturing process inside the production facility in order to monitor and control the weight of tablet samples.\\
+					They can measure weights upto a hundredth of a gram hence they are sensitive and used only by pharmaceutical technicians working inside the production area. 
+				 
+						\begin{figure}[H]
+							\centering				
+							\includegraphics[scale=0.6]{electronic-balance.png}
+							\caption{Electronic balance}
+							\label{fig:electronic balance}
+						\end{figure}
+						
+			\newpage	
+			\subsubsection{Mechanical tools}
+				\subsubsection*{Scribe}
+					A scribe is used to sketch geometric constructs on metal stock pieces.
+					The lines are used to determine the shape and geometry of the work piece.
+					 
+						\begin{figure}[H]
+							\centering				
+								\includegraphics[scale=0.6]{scribe.png}
+							
+							\caption{Scribe}
+							\label{fig:scribe}
+						\end{figure}
+						
+				\subsubsection*{Center Punch}
+					The center punch tool is used to create a dent at the center of a drilling circle in a work piece.
+					This is done to avoid the drill bit from wondering around the center of the drilling center.
+					The tip of center punch tool is placed on the center of the drilling circle vertically and striked at the top using a hammer.  
+						\begin{figure}[H]
+							\centering				
+								\includegraphics[scale=0.6]{center-punch.png}
+							\caption{Center punch tool}
+							\label{fig:center-punch}
+						\end{figure}				
+				
+				\newpage
+				\subsubsection*{Screw drivers}
+					Screw drivers are used to insert or remove screws from a threaded hole.
+					Cordless hand drills like the one in figure \ref{subfig:hand-drill} in page \pageref{subfig:hand-drill} are also used to add or remove screws using a screw driver bit.
+					Both ends of these bits can be used for different types of screws.
+						\begin{figure}[H]
+							\begin{subfigure}{0.5\linewidth}				
+								\centering				
+								\includegraphics[scale=0.1]{screw-driver.png}
+								\caption{Screw driver}
+								\label{subfig:screw-driver}
+							\end{subfigure}						
+							\hfill
+							\begin{subfigure}{0.5\linewidth}
+								\centering
+								\includegraphics[width=0.5\linewidth]{screwdriver-drill-bits.png}
+								\caption{Screw driver drill bits}														\label{subfig:screwdriver-drill-bits}
+							\end{subfigure}
+						\end{figure}
+						
+				\subsubsection*{Pliers}
+				
+				Pliers are gripping tools that can be used to grip objects like nuts, bolts ,wires, etc.
+				Round nose pliers like the one in figure \ref{subfig:bent-nose-pliers} in page \pageref{subfig:bent-nose-pliers} can be used to handle retainer rings, grip rings, snap etc. 
+				
+						\begin{figure}[H]
+							\begin{subfigure}{.5\textwidth}
+								\centering				
+								\includegraphics[width=0.5\textwidth]{pliers.png}
+								\caption{Pliers}
+								\label{subfig:pliers}
+							\end{subfigure}							
+							\begin{subfigure}{.5\textwidth}
+								\centering
+								\includegraphics[width=0.5\textwidth]{bent-nose-pliers.png}
+								\caption{Bent nose pliers}
+								\label{subfig:bent-nose-pliers}
+							\end{subfigure}
+						\begin{center}
+							\begin{subfigure}{.5\textwidth}
+								\centering
+								\includegraphics[width=0.5\textwidth]{round-nose-pliers.png}
+								\caption{Round nose pliers}
+								\label{subfig:round-nose-pliers}
+							\end{subfigure}
+							\caption{Types of pliers used}
+							\label{fig:types-of-pliers}
+						\end{center}
+							
+						\end{figure}
+				
+				\newpage		
+				\subsubsection*{Wrenches}
+				Wrenches like the ones used in figures \ref{subfig:open-ended-wrench}, \subref{subfig:box-ended-wrench}, \subref{subfig:combination-wrench} and \subref{subfig:socket-wrench} are used to tighten or loosen nuts and bolts and come in various sizes from 5mm upto 32mm.
+				Allen keys also known as Hex keys shown in figure \ref{subfig:allen-keys} are used to tighten or loosen socket head cap screws, set screws, pressure plugs etc.
+						\begin{figure}[H]
+							\begin{subfigure}{0.5\textwidth}
+								\centering
+								\includegraphics[width=0.5\textwidth]{open-ended-wrench.png}
+								\caption{Open ended wrench}
+								\label{subfig:open-ended-wrench}							
+							\end{subfigure}
+							\hfill
+							\begin{subfigure}{0.5\textwidth}
+								\centering
+								\includegraphics[width=0.5\textwidth]{box-ended-wrench.png}
+								\caption{Box ended wrench}
+								\label{subfig:box-ended-wrench}
+							\end{subfigure}	
+							
+							\begin{subfigure}{0.5\textwidth}
+								\centering
+								\includegraphics[width=0.5\textwidth]{combination-wrench.png}
+								\caption{Combination wrench}
+								\label{subfig:combination-wrench}
+							\end{subfigure}	
+							\hfill
+							\begin{subfigure}{0.5\textwidth}
+								\centering
+								\includegraphics[width=0.5\textwidth]{socket-wrench.png}
+								\caption{Socket wrench}
+								\label{subfig:socket-wrench}
+							\end{subfigure}
+							
+							\begin{center}
+								\begin{subfigure}{0.5\textwidth}
+								\centering
+\									\includegraphics[width=0.5\textwidth]{allen-key.png}
+									\caption{Allen keys/Hex keys}
+									\label{subfig:allen-keys}
+								\end{subfigure}
+							\end{center}
+							\caption{Types of wrenches used}
+							\label{fig:types-of-wrenches}		
+						\end{figure}												
+				
+				\newpage
+				\subsubsection*{Wire brush}
+					Wire brushes are used to clean metal surfaces using abrasive force.
+					A brush is commonly used to clean slag residue left off after stick welding.			
+						\begin{figure}[H]
+							\centering		
+							\includegraphics[width=0.5\textwidth]{wire-brush.png}
+							\caption{Wire brush}
+							\label{fig:wire-brush}
+						\end{figure}
+						
+				\subsubsection*{Riveting tool}
+					A riveting tool is used to join metal sheets, plates or cladding boards.
+					A hole is first drilled using a hand drill and a rivet of suitable size is riveted to the hole.
+					The rod of the rivet is pulled thus expanding and pushing the rivet into the hole.
+					Once a rivet is fastened, it can not be removed, therefore the rivet must be drilled in order to remove it.    
+						\begin{figure}[H]
+							\centering				
+							\includegraphics[width=0.5\textwidth]{riveting-tool.png}
+							\caption{Riveting tool}
+							\label{fig:riveting-tool}
+						\end{figure}
+						
+				\subsubsection*{Files}
+					A file is an abrasive tool that can remove chips of material from a work piece.
+					It can be used to shape, smooth rough edges and remove burs off metal surfaces after grinding.
+					A file has a rough, criss-cross pattern which makes it abrasive.
+						\begin{figure}[H]
+							\centering				
+							\includegraphics[width=0.5\textwidth]{files.png}
+							\caption{Files}
+							\label{fig:files}
+						\end{figure}
+						
+				\subsubsection*{Wedge tool}
+				 	A wedge can be used to split wood and lift objects.
+				 	It was particularly used as a chisel to remove hardened concrete, tiles and flooring.
+						\begin{figure}[H]
+							\centering				
+							\includegraphics[width=0.5\textwidth]{wedge.png}
+							\caption{Wedge tool}
+							\label{fig:wedge}
+						\end{figure}
+				\newpage		
+				\subsubsection*{Hammers and Mallets}
+					Hammer and mallets are used to deliver blunt force to a work piece. Hammers can remove nails while mallets cannot.Mallets were used to fit or remove bearing housings and sleeves off of shafts by tapping around gently.
+					
+					\begin{figure}[H]
+					\centering
+						\begin{subfigure}{0.5\textwidth}
+							\centering				
+							\includegraphics[width=0.4\textwidth]{hammer.png}
+							\caption{Hammer}
+							\label{subfig:hammer}
+						\end{subfigure}
+						\begin{subfigure}{0.5\textwidth}
+							\centering				
+							\includegraphics[width=0.4\textwidth]{mallets.png}
+							\caption{Mallets}
+							\label{subfig:mallets}
+						\end{subfigure}
+					\label{fig:hammers-and-mallets}
+					\caption{Types of hammers and mallets}
+					\end{figure}	
+							
+				\subsubsection*{Saws}
+					Saws are used to cut material.
+					Wood saws like the one shown in figure \ref{subfig:wood-saw} are used to cut wood while hacksaws in figure \ref{subfig:hacksaw} are used to cut both wood and metal using a High Speed Steel hacksaw blade.
+								
+					\begin{figure}[H]
+					\centering
+						\begin{subfigure}{0.5\textwidth}
+							\centering				
+							\includegraphics[width=0.5\textwidth]{wood-saw.png}
+							\caption{Wood saw}
+							\label{subfig:wood-saw}
+						\end{subfigure}									
+						\begin{subfigure}{0.5\textwidth}
+							\centering				
+							\includegraphics[width=0.5\textwidth]{hacksaw.png}
+							\caption{Hacksaw}
+							\label{subfig:hacksaw}
+						\end{subfigure}
+						\label{fig:saws}
+						\caption{Types of saws}
+					\end{figure}
+				
+				\newpage	
+				\subsubsection*{Bench Vise}
+					A bench vise is a tool used to hold work pieces firmly in place.
+					
+						\begin{figure}[H]
+							\centering				
+							\includegraphics[width=0.5\textwidth]{bench-vise.png}
+							\caption{Bench vise}
+							\label{fig:bench-vise}
+						\end{figure}
+						
+				\subsubsection*{Clamps}
+				
+					Clamps are tools used to clamp down work pieces to a bench table.
+					 
+						\begin{figure}[H]
+							\centering				
+							\includegraphics[width=0.5\textwidth]{clamps.png}
+							\caption{Clamps}
+							\label{fig:clamps}
+						\end{figure}
+				
+				\newpage		
+				\subsubsection*{Puller}
+				
+					Pullers are used to pull apart covers, metal sleeves and shafts in machinery which are difficult to remove by hand.
+					Small pullers typically have three jaws while larger heavy duty pullers have two.
+					
+					\begin{figure}[H]
+						\begin{subfigure}{0.5\textwidth}
+							\centering				
+							\includegraphics[width=0.5\textwidth]{puller.png}
+							\caption{Three jaw puller}
+							\label{subfig:three-jaw-puller}
+						\end{subfigure}
+						\hfill
+						\begin{subfigure}{0.5\textwidth}
+							\centering				
+							\includegraphics[width=0.5\textwidth]{large-puller.png}
+							\caption{Two jaw puller}
+							\label{subfig:two-jaw-puller}
+						\end{subfigure}
+						\caption{Types of pullers}
+						\label{fig:types-of-pullers}
+					\end{figure}
+					
+				\subsubsection*{Silicone gun}
+					
+					Silicone guns are used to spread silicone sealant glue from a cylinder shaped cartridge.							
+						\begin{figure}[H]
+							\begin{subfigure}{0.5\textwidth}
+								\centering				
+								\includegraphics[width=0.5\textwidth]{silicone-gun.png}
+								\caption{Silicone gun}
+								\label{subfig:silicone-gun}
+							\end{subfigure}
+							\hfill
+							\begin{subfigure}{0.5\textwidth}
+								\centering
+								\includegraphics[width=0.5\textwidth]{silicone-sealant-cartridges.png}
+								\label{subfig:silicone-cartridge}
+								\caption{Silicone sealant cartridges}
+							\end{subfigure}
+							\label{fig:silicon-gun-and-sealant}
+							\caption{Silicon gun and cartridge}
+						\end{figure}
+						
+						
+				\subsubsection*{Hydraulic Jack}
+					Hydraulic jacks are used to lift heavy objects like heavy gearboxes and motors by giving a mechanical advantage.
+									
+						\begin{figure}[H]
+							\centering				
+							\includegraphics[width=0.2\textwidth]{hydraulic-jack.png}
+							\caption{Hydraulic jack}
+							\label{fig:hydraulic-jack}
+						\end{figure}
+						
+				\subsubsection*{Construction Jack}
+					Construction jacks are used to hold ceilings and platforms at a certain height. 						
+						\begin{figure}[H]
+							\centering				
+							\includegraphics[width=0.5\textwidth]{construction-jack.png}
+							\caption{Construction jack}
+							\label{fig:construction-jack}
+						\end{figure}						
+						
+				\subsubsection*{Scaffolding}
+					Scaffolding is used as an elevated platform that allows workers and technicians	to work safely at large heights.
+					Scaffolding platforms are typically assembled using frames, struts and locking pins to keep them firm.
+					These can be commonly seen in construction sites or during maintenance work in buildings. 
+					
+						\begin{figure}[H]
+							\centering				
+							\includegraphics[width=0.5\textwidth]{scaffolding.png}
+							\caption{Scaffolding platform}
+							\label{fig:scaffolding-platform}
+						\end{figure}
+						
+			\newpage
+			\subsubsection{Electrical tools}
+				\subsubsection*{Tester}
+					Testers are used by electricians to figure out whether the a wire  or metal is live.					
+						\begin{figure}[H]
+							\centering				
+							\includegraphics[width=0.2\textwidth]{tester.png}
+							\caption{Tester}
+							\label{fig:tester}
+						\end{figure}
+						
+				\subsubsection*{Voltmeter}
+					Voltmeters are used to measure voltage.
+					Voltmeters can be analog or digital meters which are present in the main electrical supply panel.
+					Three phase supply voltage are around 430 volts therefore meters have dials which measure voltages upto hundreds of volts. 
+					
+						\begin{figure}[H]
+							\centering				
+							\includegraphics[width=0.45\textwidth]{voltmeter.png}
+							\caption{Voltmeter}
+							\label{fig:voltmeter}
+						\end{figure}
+						
+				\subsubsection*{Ammeter}
+					Ammeters are used to measure current.
+					Just like the voltmeter, ammeter can be analog or digital.
+					Ammeter are mostly present in the main electrical panel.
+						
+								
+						\begin{figure}[H]
+							\centering				
+							\includegraphics[width=0.3\textwidth]{ammeter.png}
+							\caption{Ammeter}
+							\label{fig:ammeter}
+						\end{figure}
+						
+				\subsubsection*{Multimeter}
+					Multimeters are used to measure voltage, amperage, resistance, capacitance and continuity.
+					Multimeters can be analog or digital.
+					Digital multimeters have the added benefit of measuring the hFe of BJTs (Bipolar Junction Transistors).
+					
+						\begin{figure}[H]					
+							\begin{subfigure}{0.4\textwidth}
+								\centering				
+								\includegraphics[width=0.4\textwidth]{analog-multimeter.png}
+								\caption{Analog multimeter}
+								\label{subfig:analog-multitmeter}
+							\end{subfigure}
+							\hfill
+							\begin{subfigure}{0.5\textwidth}
+								\centering				
+								\includegraphics[width=0.5\textwidth]{digital-multimeter.png}
+								\caption{Digital multimeter}
+								\label{subfig:digital-multitmeter}
+							\end{subfigure}
+							\label{fig:types-of-multimeters}
+							\caption{Types of multimeters}
+						\end{figure}
+				\subsubsection*{Clamp meter}
+					A clamp meter is used to measure the voltage or current of high power electrical cables which can some times have voltages of upto thousands of volts. 
+						\begin{figure}[H]
+							\centering				
+							\includegraphics[width=0.3\textwidth]{clamp-meter.png}
+							\caption{Clamp meter}
+							\label{fig:clamp-meter}
+						\end{figure}
+						
+				\subsubsection*{Wire cutter}
+					Wire cutters are used to cut wires and cables.
+					
+						\begin{figure}[H]
+							\centering				
+							\includegraphics[width=0.25\textwidth]{wire-cutter.png}
+							\caption{Wire cutter}
+							\label{fig:wire-cutter}
+						\end{figure}
+						
+				\subsubsection*{Wire stripper}
+					Wire strippers are used to remove and pull away the outer covering or protective sheath of wires as seen here in figure \ref{fig:wire-stripper}.
+						\begin{figure}[H]
+							\centering				
+							\includegraphics[width=0.5\textwidth]{wire-stripper.png}
+							\caption{Wire stripper}
+							\label{fig:wire-stripper}
+						\end{figure}
+				
+				\subsubsection*{Soldering station}
+					A soldering station is a piece of equipment which consists of a soldering iron, an iron stand and a power source as one unit.
+					Soldering irons typically come with a variety of replaceable tips; this is because certain applications require different ways of transferring heat to the soldering surface.
+					For example a large tip will transfer heat to a larger area and can be used to solder components that have large leads while a smaller tip is used to quickly apply heat to a small area  when soldering sensitive or small electrical components which might burn due to excessive heat.
+					Commonly used tips are;
+					\begin{itemize}
+						\item Bevel tip.
+						\item Conical tip.
+						\item Chisel tip.
+						\item Bent tip.
+						\item Knife tip.					
+					\end{itemize}					   
+					It is used to make electrical connections by fusing a filler metal to join electrical components and wires.
+					Typical solder wire contains a lead to tin ratio of 60/40 or 63/37.
+					Solder wire in figure \ref{subfig:solder-wire} contains flux or rosin that helps clean the metal surface of oxides and help the solder fuse more efficiently and give a strong connection.
+					Sometimes flux paste or soldering paste as shown in figure \ref{subfig:solder-paste} is applied to clean surfaces which are heavily oxidized.
+					
+					 
+					
+					  
+						\begin{figure}[H]
+							\centering				
+								\includegraphics[width=0.5\textwidth]{soldering-station.png}
+							\caption{Soldering station}
+							\label{fig:soldering-station}
+						\end{figure}						
+												
+					\begin{figure}[H]
+						\begin{subfigure}{0.5\textwidth}
+							\centering				
+							\includegraphics[width=0.5\textwidth]{solder-wire.png}
+							\caption{Solder wire}
+							\label{subfig:solder-wire}
+						\end{subfigure}
+						\hfill
+						\begin{subfigure}{0.5\textwidth}
+							\centering				
+							\includegraphics[width=0.5\textwidth]{soldering-paste.png}
+							\caption{Solder paste}
+							\label{subfig:solder-paste}
+						\end{subfigure}
+						\label{soldering-accessories}
+						\caption{Soldering accessories}
+					\end{figure}
+						
+				\subsubsection*{Cables and wires}
+					\begin{figure}[H]
+						\begin{subfigure}{0.4\textwidth}
+							\centering				
+							\includegraphics[width=0.4\textwidth]{single-core-cable.png}
+							\caption{Single core cable}
+							\label{fig:single-core-cable}
+						\end{subfigure}
+						\hfill
+						\begin{subfigure}{0.4\textwidth}
+							\centering				
+							\includegraphics[width=0.4\textwidth]{2-core-cable.png}
+							\caption{Two core non-shielded cable}
+							\label{subfig:two-core-cable}
+						\end{subfigure}
+						\hfill
+						\begin{subfigure}{0.4\textwidth}
+							\centering				
+							\includegraphics[width=0.4\textwidth]{3-core-cable.png}
+							\caption{Three core non-shielded cable}
+							\label{subfig:three-core-cable}
+						\end{subfigure}
+						\hfill
+						\begin{subfigure}{0.4\textwidth}
+							\centering				
+							\includegraphics[width=0.4\textwidth]{shielded-cables.png}
+							\caption{Shielded cables}
+							\label{subfig:shielded-cable}
+						\end{subfigure}
+						\hfill
+						\begin{subfigure}{0.4\textwidth}
+							\centering				
+							\includegraphics[width=0.4\textwidth]{earth-wire.png}
+							\caption{Earth wire}
+							\label{subfig:earth-wire}
+						\end{subfigure}			
+						\hfill
+						\begin{subfigure}{0.4\textwidth}
+							\centering				
+							\includegraphics[width=0.4\textwidth]{cat6-cable.png}
+							\caption{CAT 6 cable}
+							\label{subfig:cat6-cable}
+						\end{subfigure}
+						\label{fig:types-of-cables}
+						\caption{Types of cables}
+					\end{figure}			
+						
+				\subsubsection*{Cable accessories}
+					\begin{figure}[H]
+						\begin{subfigure}{0.4\textwidth}
+							\centering				
+							\includegraphics[width=0.4\textwidth]{cable-glands.png}
+							\caption{Cable glands}
+							\label{subfig:cable-glands}
+						\end{subfigure}
+						\hfill						
+						\begin{subfigure}{0.4\textwidth}
+							\centering				
+							\includegraphics[width=0.4\textwidth]{cable-spiral.png}
+							\caption{Cable spiral}
+							\label{subfig:cable-spiral}
+						\end{subfigure}
+						\hfill
+						\begin{subfigure}{0.4\textwidth}
+							\centering				
+							\includegraphics[width=0.4\textwidth]{cable-ties.png}
+							\caption{Cable ties}
+							\label{subfig:cable-ties}
+						\end{subfigure}
+						\hfill
+						\begin{subfigure}{0.4\textwidth}
+							\centering				
+							\includegraphics[width=0.4\textwidth]{junction-box.png}
+							\caption{Junction box}
+							\label{subfig:junction-box}
+						\end{subfigure}
+					
+						\label{cable-accessories}
+						\caption{Cable accessories}
+					\end{figure}
+			\newpage
+			\subsubsection{Power tools}
+				\subsubsection*{Hand Drill}
+				
+				Hand drills are hand held power tools that are used to fasten or remove screws and drill holes.
+				Most hand drills are electrically powered however air powered variants also exist.
+				High power drills are usually powered via electrical cord and are much more rugged while cordless drills are more convenient since they are light and can be used anywhere.
+				However cordless drills are less powerful since they are powered by a rechargeable battery and extra batteries must be kept.
+				Cordless drills typically have keyless chucks while corded drills use a keyed chuck.
+				A keyed chuck has a tighter grip on the drill bit and doesn't slip when compared with a keyless chuck, however a keyless chuck is much more easier to use since its quick to change and fasten bits and doesn't require a key. 
+				
+					\begin{figure}[H]
+						\begin{subfigure}{0.5\linewidth}							
+							\centering				
+							\includegraphics[width=0.5\textwidth]{hand-drill.png}
+							\caption{Hand drill}
+							\label{subfig:hand-drill}
+						\end{subfigure}
+						\hfill
+						\begin{subfigure}{0.5\linewidth}
+							\centering				
+							\includegraphics[width=0.5\textwidth]{cordless-drill.png}
+							\caption{Cordless drill}
+							\label{subfig:cordless-drill}
+						\end{subfigure}
+						\caption{Types of hand drills}
+						\label{fig:types-of-drills}
+					\end{figure}
+						
+				\subsubsection*{Drill press}
+				
+				A drill press is needed when drilling holes or cutting threads accurately. The spindle can be moved in the vertical axis using a spring loaded rotary handle.
+				The spindle speed is adjusted using a belt or gear mechanism.
+				Spindle speed is determined by the drilling material, drill bit and the thickness off the material.
+				The drill press comes with a table that can be adjusted and set using tightening screws in order to align the work-piece according  to the required orientation.  
+						\begin{figure}[H]
+							\centering				
+							\includegraphics[width=0.4\textwidth]{drill-press.png}
+							\caption{Drill press}
+							\label{fig:drill-press}
+						\end{figure}
+				
+				\newpage		
+				\subsubsection*{Angle grinder}
+						
+						An angle grinder shown in figure \ref{fig:angle-grinder} is used for metal fabrication purposes like cutting, sanding, buffing and grinding.
+			            They are commonly used to remove rust and lime scale off of surfaces and is an important part of the workshop inventory because of it's wide range of applications.
+			            Angle grinders can be classified according to the following factors; power consumption, diameter and maximum rpm.
+			            Proper safety practices must be followed when using angle grinders at all times in order to avoid injury.
+			            
+			            \begin{figure}[H]
+							\centering				
+							\includegraphics[width=0.5\textwidth]{ppe-proper.jpg}	
+							\caption{Proper use of PPE when using an angle grinder}
+							\label{fig:angle-grinder-ppe}
+						\end{figure}
+			            
+			            \begin{itemize}
+							\item Proper PPE must be worn before use, preferably safety goggles and a face shield, tightly fitting gloves and ear plugs.
+							\item Always make sure that the guard and the handle is properly installed at all times.
+							\item Loose clothing must not be worn to avoid entanglement to the spinning wheel or accessory.
+							\item A cutting wheel can only be used if the rpm of the grinder is less than the allowed rpm in the cutting wheel; if this condition is not met,then the cutting wheel can shatter during operation and cause injury. 
+							\item The diameter of the cutting wheel must match the diameter of the grinder, for example a 4 1/2 inch cutting wheel must not be fitted to a 4 inch grinder hence a 4 inch cutting wheel must be used in this case.
+							\item Always make sure to use the grinder with both hands to increase stability.
+							\item Always note the spin direction of the grinder which is usually marked on top of the spindle housing.
+							\item The grinder must be used only when the spindle reaches its maximum speed after switching on.
+							   	 			            	
+			            \end{itemize}		
+						 
+						\begin{figure}[H]
+							\centering				
+							\includegraphics[width=0.5\textwidth]{angle-grinder.png}	
+							\caption{Angle grinder}
+							\label{fig:angle-grinder}
+						\end{figure}
+						
+						Angle grinders have a wide variety of accessories for a range of uses.
+						Some of the more common accessories are cutting wheels, grinding wheels, sanding wheel, wire cup brushes, wire wheel brushes and polishing wheels.
+						Cutting wheels like the one shown in figure \ref{subfig:cutting-wheel} are abrasive tools used to cut metal, cladding board, pipes and box bars.
+						Special care must be taken when using cutting discs because of there tendency to shatter.
+						Discs which are stored in damp conditions and ones that show signs of damage must not be used.
+						They are not designed for grinding hence they can shatter if used at angle, therefore a disc must be held perpendicularly to the cutting surface. 
+						
+						Grinding wheels like the one in figure \ref{subfig:grinding-wheel} are used to remove material by abrasion, they can be used to remove sharp burrs left off after cutting metal, flatten or chamfer sharp edges or corners and to remove rust or lime scale off of a surface.
+						These discs are designed to be used at an angle of about 45 to 30 degrees from the surface of the metal. 
+						 
+						 Rust and limescale can be removed much more efficiently using wire cup brushes and wire wheel brushes.
+						 Wire wheel brushes are used to clean tight corners and joints which are hard to reach using a grinding wheel.
+						 Wire wheels must also be used perpendicularly to the surface of the metal.
+						  
+						\begin{figure}[H]
+							\begin{subfigure}{0.4\linewidth}
+								\centering				
+								\includegraphics[width=0.4\textwidth]{cutting-disc.png}
+								\caption{Cutting wheel}
+								\label{subfig:cutting-wheel}
+							\end{subfigure}
+							\hfill
+							\begin{subfigure}{0.4\linewidth}
+								\centering				
+								\includegraphics[width=0.4\textwidth]{grinding-wheel.png}	
+								\caption{Grinding wheel}
+								\label{subfig:grinding-wheel}
+							\end{subfigure}
+							\hfill
+							\begin{subfigure}{0.4\linewidth}
+								\centering				
+								\includegraphics[width=0.4\textwidth]{wire-cup-brush.png}				
+								\caption{Wire cup brush}
+								\label{subfig:wire-cup-brush}
+							\end{subfigure}
+							\hfill
+							\begin{subfigure}{0.4\linewidth}
+								\centering				
+								\includegraphics[width=0.4\textwidth]{wire-wheel-brush.png}
+								\caption{Wire wheel brush}
+								\label{subfig:wire-wheel-brush}
+							\end{subfigure}
+							\label{fig:angle-grinder-accessories}
+							\caption{Angle grinder accessories}
+						\end{figure}
+						
+				\subsubsection*{Bench grinder}
+				
+				A bench grinder is a tool which has two spinning grinding stones on either side which are used to grind and shape rough edges of small metallic parts or tools.
+				The bench grinder is also used to sharpen drill bits.   
+						\begin{figure}[H]
+							\centering				
+							\includegraphics[width=0.5\textwidth]{bench-grinder.png}	
+							\caption{Bench grinder}
+							\label{fig:bench-grinder}
+						\end{figure}
+			
+			\newpage
+			\subsubsection{Welding tools}
+				\subsubsection*{SMAW(Shielded Metal Arc Welding) machine}
+				
+				Shielded metal arc welding also informally known as stick welding is a form of arc welding where heat is generated using an arc that melts the base metal which fuses to the filler metal of an electrode.
+				The electrode has a flux coating that burns during welding and produces a shielding gas which protects the molten metal or weld pool from oxidation.
+				
+						\begin{figure}[H]
+							\centering				
+							\includegraphics[width=0.5\textwidth]{stick-welding.png}				
+							\caption{SMAW welding circuit \citep{stick-welding-circuit}}
+							\label{fig:smaw-welding-circuit}
+						\end{figure}
+				
+				At the same time the flux also deposits a form of slag that protects the weld bead from oxidizing while cooling down. 
+				Once the weld bead has cooled down the slag is removed using a chipping hammer and a wire brush.
+				The electrode is held by an electrode holder which is connected to the positive terminal of the welding machine while the base metal is connected to the negative terminal.
+				The electrode is brought in contact with the surface of the base metal in order to create an arc.
+				It is important to note that the base metal must be free from rust before welding else the filler metal will not fuse or will make a poor weld.
+				Hence the base metal is usually cleaned using an angle grinder before welding.
+				\\
+						\begin{figure}[H]
+							\centering				
+							\includegraphics[width=0.6\textwidth]{welding-electrode.png}				
+							\caption{SMAW working principle \citep{stick-welding-circuit}}
+							\label{fig:smaw-working-principle}
+						\end{figure}
+						
+				Electrodes have a number system that gives information about the type of electrode and how it can be used.
+				Electrodes typically have a 4 digit number, for example E6013 is a number given to a general purpose electrode used for welding mild steel.
+				According to \citep{stick-welding-circuit} the first letter 'E' stands for electrode, the first two digits denote the tensile strength of the filler metal in thousand pounds per square inch, the third digit denotes the allowed position of the electrode where (1) stands for any position, (2) two stands for horizontal or flat position, (3) three stands for flat position and (4) stands for overhead vertical , horizontal, vertical and flat positions and the final digit along with the third digit combined gives the type of flux used in the electrode.
+				
+						\begin{figure}[H]
+							\centering				
+							\includegraphics[width=0.5\textwidth]{smaw-electrodes.png}				
+							\caption{Welding electrodes used for SMAW}
+							\label{fig:smaw-electrodes}
+						\end{figure}				
+				
+				Hence the E6013 electrode can be identified as having a tensile strength of 60,000psi that can be used in the flat position which has a titania potassium flux coating. Metal arc welding is a popular welding method due to it's low cost since it only takes a welding machine, two terminal cables and a set of electrodes which are relatively cheap. It is also very reliable for welding applications in an outdoor environment where wind is an issue.
+				
+				 Arc welding emits a lot of heat and harmful Ultra Violet radiation that can have both short term and long term effects.
+				 Hence it is important to cover all parts of the body by wearing proper PPE which includes welding helmets (shown in figure \ref{fig:Welding helmet} in page \pageref{fig:Welding helmet}), welding gloves (see figure \ref{subfig:welding-gloves} in page \pageref{fig:types-of-gloves}, welding aprons(figure \ref{fig:welding-apron}), overalls or welding jackets.  
+				
+						\begin{figure}[H]
+							\centering				
+							\includegraphics[width=0.4\textwidth]{smaw-welding-machine.png}				
+							\caption{SMAW welding machine}
+							\label{fig:smaw-welding-machine}
+						\end{figure}
+												
+				\subsubsection*{TIG(Tungsten Inert Gas) machine}
+						
+						\begin{figure}[H]
+							\centering				
+							\includegraphics[scale=0.2]{tig-welding-process.png}		
+							\caption{TIG welding process\citep{tig-welding-circuit}}
+							\label{fig:tig-welding-process}
+						\end{figure}				
+						
+				TIG welding is a type of arc welding where two metals are fused using the heat that is produced by an arc, however unlike SMAW in page \pageref{fig:smaw-welding-circuit} the arc and the weld pool is protected by releasing an inert gas separately like argon on to the weld pool; this prevents the weld bead from oxidizing.
+						There are several key differences between SMAW and TIG welding.
+						\begin{itemize}
+							\item The electrode does not contain the filler material, it only directs the arc to the base metal, the electrode is made of tungsten alloy.
+							\item A separate welding rod is used as the filler metal.
+							\item Shielding gas is supplied through the TIG torch.
+							\item The shielding gas typically consists of a mixture of argon and carbon dioxide.
+							\item The arc is started using a trigger switch in the TIG torch rather than mechanical contact between the base metal and the electrode.
+							\item Weld beads have a much more refined finish than SMAW weld beads.
+							\item Mild steel, Stainless steel, aluminium and other alloys can be welded.
+						\end{itemize}
+						
+						TIG welding requires special equipment such as an argon cylinder, a TIG torch like the one in figure \ref{fig:components-of-a-tig-torch} and a TIG welding machine.
+						\begin{figure}[H]
+							\centering				
+							\includegraphics[scale=0.4]{parts-of-a-tig-torch.png}
+							\caption{Components of a TIG torch}
+							\label{fig:components-of-a-tig-torch}
+						\end{figure}  
+						
+		\newpage		
+		\subsection{Electrical and Electronic components}
+				\subsubsection*{Molded Case Circuit Breakers(MCCB)}
+				
+						\begin{figure}[H]
+							\centering				
+							\includegraphics[width=0.5\textwidth]{molded-case-circuit-breaker.png}
+							\caption{MCCB}
+							\label{fig:molded-case-circuit-breaker}
+						\end{figure}
+				 An MCCB is a safety device that is used to trip circuit branches that have an amperage between 800A to 1500A.
+				 These circuit breakers trip during current overloads and short circuits. MCCBs have the option of adjusting the trip current for overloads. They are commonly used in industrial applications like control panels, motor control centers and powers supply panels. MCCBs are controlled using a changeover switch or a rotary handle that fits into a shaft that is attached to an adapter plate which turns the breaker switch on or off.
+				 
+				 				 
+				\newpage		
+				\subsubsection*{Magnetic Level Switch}
+						
+						A magnetic level switch is a type of float device that is used as an electro-mechanical switch\citep{magnetic-float-switch}.
+						The device consists of a stem, a reed switch, a sealed float and a permanent magnet.
+						The stem is made up of non magnetic material and houses a reed switch and its wiring. The float is sealed and contains a permanent magnet that moves along the stem as the water level changes. The stem and the float is submerged inside the boiler water tank.
+						As the float reaches the level of the reed switch, the magnetic field of the permanent magnet of the float causes the reed switch to close the circuit which produces an electric signal.
+						
+						Boilers usually have two reed switches for the Low level and High Level.
+						If the the float reaches below the low level an alarm will turn on.
+						If the float is between the low level and high level then the feed motor pumps will turn on until the water level reaches the high level.  
+						 
+						\begin{figure}[H]
+							\centering				
+							\includegraphics[width=0.5\textwidth]{magnetic-float-switch.png}
+							\caption{Magnetic float switches}
+							\label{fig:magnetic-float-switches}
+						\end{figure}
+						
+						\begin{figure}[H]	
+							\centering				
+								\includegraphics[width=0.4\textwidth]{magnetic-float-switch-diagram.png}
+							\caption{Magnetic float switch diagram}
+							\label{fig:magnetic-float-switch-diagram}
+						\end{figure}
+						
+				\subsubsection*{Relays}
+				
+				\begin{figure}[H]
+							\centering
+							\includegraphics[width=0.5\textwidth]{relay.png}
+							\caption{Relay}
+							\label{fig:relay}
+						\end{figure}
+						
+				A relay is a kind of solid state switch that allows a low powered signal to control a high powered device or circuit \citep{relays}.
+				Relays usually contain five pins; two positive pins, two negative pins, one normally open pin and one normally closed pin as shown in figure \ref{fig:relay-diagram}.
+				A relay contains a coil which creates a magnetic field when a signal from the low powered input side is given, the resulting magnetic field activates a contact that switches from the normally closed pin to the normally open pin.
+				
+					\begin{figure}[H]
+							\centering
+							\includegraphics[width=\textwidth]{relay-diagram.png}
+							\caption{Relay diagram}
+							\label{fig:relay-diagram}
+						\end{figure}
+						
+				\newpage
+				\subsubsection*{Proximity sensors}
+				
+				A proximity sensor or transducer is a sensing device that produces a signal when an object is in contact with or in close proximity to the sensor.
+				They are commonly used in measuring the rpm or angular position of rotating shafts or motors.
+				They are also used as a safety device in machines to detect whether doors, openings or lids are opened or closed.
+				In most cases the machine would only work or turn on if all doors or lids of the machine are fully closed.
+				This is useful since it can avoid serious injury to the user. 
+						\begin{figure}[H]
+							\centering
+							\includegraphics[width=0.3\textwidth]{proximity-sensor.png}
+							\caption{Proximity sensor}
+							\label{fig:proximity-sensor}
+						\end{figure}
+						
+				\subsubsection*{Pressure switch}
+				
+				A pressure switch is a sensing device that produces a signal when a certain pressure level is reached.
+				Pressure switches are commonly used to control motors and pumps in air compressors, boilers and other pneumatic systems. 
+				
+				
+						\begin{figure}[H]
+							\centering
+							\includegraphics[width=0.3\textwidth]{pressure-switches.png}
+							\caption{Pressure switch}
+							\label{fig:pressure-switch}
+						\end{figure}
+						
+				\subsubsection*{Variable Frequency Drive}
+				
+						\begin{figure}[H]
+							\centering
+							\includegraphics[width=0.3\textwidth]{vfd.png}
+							\caption{Variable Frequency Drive}
+							\label{fig:vfd}
+						\end{figure}
+						
+						\begin{figure}[H]
+							\centering
+							\includegraphics[width=\textwidth]{vfd_schema.png}
+							\caption{VFD circuit diagram}
+							\label{fig:vfd-circuit}
+						\end{figure}
+						
+						A VFD is an AC motor driver that converts a three phase AC power into a three phase pulse with varying frequency which in turn changes the speed of the motor.
+						A VFD circuit contains three main sections; a six pulse rectifier, a DC filter/buffer and an IGBT inverter. The controller sends signals to the inverter to vary the speed of the motor.
+						
+						\newpage
+						
+						The rotational speed of an AC motor is given by the following equation, where $\omega$ is the speed, $f$ is the frequency of the AC signal and $P$ is the number of poles of the motor.
+						\begin{equation}
+							\omega = \dfrac{{120} \times {f}}{P}
+							\label{eq:motor-speed}						
+						\end{equation}
+						
+						The no of poles of the motor is fixed, therefore the only way of controlling the speed $\omega$ is by changing the frequency $f$.
+						Suppose the motor is a two-pole motor is being used with a main supply of 50Hz.
+						Then the maximum speed of the motor can be calculated using equation \ref{eq:motor-speed} \citep{vfd};
+						\vspace{0.5cm}
+						\begin{center}
+							$\omega = \dfrac{120 \times 50}{2} = 3000$rpm 
+						\end{center}
+						
+						The six pulse rectifier converts the AC to DC power using six diodes. The rectified signal is smoothed using a DC filter or capacitor bank.
+						
+					During start up the capacitor bank is uncharged hence a large current flow through the circuit.
+					This current can damage and burn internal components, therefore a pre-charge circuit is used as shown in figure \ref{fig:vfd-pre-charge-circuit}.
+					
+					\begin{figure}[H]
+					\centering
+						\includegraphics[width=0.6\textwidth]{pre-charge-circuit.png}
+						\caption{Pre-charge circuit}
+						\label{fig:vfd-pre-charge-circuit}
+					\end{figure}
+					
+					\begin{itemize}
+						\item When the VFD is turned on  and the bank of capacitors aren't fully charged, the capacitors charge as the current flows through the resistors.
+						\item The VFD controller identify detects that the capacitors are fully charged, and then engage the contactor making a path of least resistance.
+						\item If the contactor doesn't close the while the VFD is still starting then the rising current causes the resistor $R$ to overheat.
+						\item The thermostat will engage and disarm the VFD in order to prevent overheating. 
+					\end{itemize}
+					
+					Commonly used VFDs at Celogen were the the Danfoss VLT 666 and the Siemens Sinamics V20.
+										
+												
+		\subsection{Air Handling Units(AHUs)}
+		An air handling unit is an insulated enclosure that supplies conditioned air to a building or facility. They can have a single stack enclosure or a double stack configuration depending on the requirement.
+		AHUs are an essential component of the HVAC(Heating Ventilation and Air Conditioning) system since it controls the temperature, humidity and air pressure inside the production area. AHUs have layers of air filters that are designed to improve air quality and filter off any harmful substances or pathogens. Specially designed AHUs are used to supply clean air to coating machines and fluid bed dryers in the production area.
+		All AHUs are installed in the service area above the production facility and have a steam supply and return piping system along with a "Chill Water" supply and return piping system.
+		They also have a supply and return ducting network that provides ventilation to all parts of the production area.
+		Chill Water and steam piping systems are insulated using non reflective rubber foam while the ducting network is insulated using a reflective rubber foam.
+		
+		\vspace{0.4cm}
+		
+		The function of an AHU can be described as follows with the help of figure \ref{fig:ahu};
+				
+			\begin{itemize}
+				\item Fresh air enters through the supply vents labeled (1).
+				\item The air gets filtered through a pre-filter (3) and a fine filter (4) with a combined efficiency of 70 percent; small particles of dust and raw material in the production area absorbed by these filters.
+				\item The filtered air passes through a coil section; the steam coil (5) raises the temperature of the air by giving off heat carried by the steam due to convection.
+				\item The cooling coil (6) carries chill water that absorbs heat from the incoming air stream thus lowering the temperature of the air.
+				\item The temperature of the air stream is controlled by varying the ammount of steam and chill water circulating inside the coil.
+				This is done using electro-mechanical actuators that are controlled remotely using the BMS(Building Management System) server.
+				Each valve can be can be fully opened (0 percent) or fully closed (100 percent). These actuators use a worm gear mechanism due to the high torque needed to open and close the valves.
+				\item Air is sucked using a blower fan (8) that is rotated using a motor and pulley (7) mechanism. The motor is wired to a star-delta connection and uses a timer relay to switch from a star circuit to the delta circuit.
+				\item When the motor is first switched on from the control panel, the motor runs in the starting mode using the star circuit to overcome the high load; once the motor reaches peak rpm the timer breaks the star circuit and changes over to the delta circuit for the motor to continue in its running mode.
+				
+				\item The blown air then passes through a fine filter (10) before being filtered through a HEPA(High Efficiency Particulate Absorbing) filter.
+				These filters have an efficiency of about 99 percent and is capable of filtering out particles and pathogens of up to 6 microns which is 6 thousandths of a millimetre. These filter cannot be washed and re-used due to it's delicate structure. Differential pressure gauges monitor the pressure difference across filters. A nominal pressure range is allowed since there is a pressure drop when air flows through them. Hence if the differential pressure reading is out of range then technicians investigate and verify the whether the filter needs to be replaced or serviced.
+				\item The conditioned air is supplied to the production area through vents and then re-circulated back through the return flow duct work back through the bottom inlet damper (2).
+				\item The air pressure is controlled manually by opening or closing the exhaust damper (9) or the bottom inlet damper (2).
+			\end{itemize}
+			
+			AHU maintenance is done quarterly per year and involves tightening screws that hold the motor, pulley and blower in place, checking pulley alignment, checking for damages in the belt,lubricating the belt and pulley, testing the bypass valves of the coil section and checking for leaks in the AHU enclosure.
+			  
+			\begin{enumerate}
+				\item Topside inlet damper
+				\item Bottom inlet damper
+				\item Pre filter
+				\item Fine filter
+				\item Steam coil
+				\item Cooling coil
+				\item Motor and pulley
+				\item Blower
+				\item Exhaust damper
+				\item Fine filter
+				\item HEPA filter
+				\item Supply damper
+			\end{enumerate}
+						
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=\textwidth]{ahu-diagram.png}
+				\caption{Parts of an Air Handling Unit}
+				\label{fig:ahu}
+			\end{figure}
+			
+			
+		\newpage
+		\subsection{Filter cleaning station}
+		Th filter cleaning staion is used by technicians to wash used filters. They are operated automatically to a set time period.
+		A maximum of four filter can be washed inside this machine. Main components are a rotating rack, water spraying nozzles, a heater and a seperate dust collection unit.
+		Compressed air is used as aerosol to spray water on to the filters using tubular nozzles placed over and under the rotating rack of the machine.
+		A heater turns on as the water is sprayed since it helps dissolve medicinal powder trapped in the folds of the filters.
+		A motor and worm gearbox assembly rotates the filter cleaning rack as the filters are washed.
+		The machine turns on only when the lid of the machine is closed, this done using the proximity sensor in the machine.
+		The top lid is opened or closed using a lever switch located in front of the machine. 
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=\textwidth]{filter-cleaning-station.png}
+				\caption{Filter cleaning station diagram}
+				\label{fig:filter-cleaning-station}
+			\end{figure}
+		\begin{itemize}
+			\item The gearbox and motor assembly had to be removed and cleaned due to excessive noise during operation.
+			\item First the motor was removed and placed aside.
+			\item The rotating rack was disassembled by removing screws holding the rack in place.
+			\item The screws holding the top plate to the gearbox shaft was removed.
+			\item Then the oil from the gearbox was drained before removing the hex bolts with an allen key.
+			\item The cast iron gearbox casing couldn't be removed, therefore the gearbox had to be removed by using a puller.
+			\item The gearbox was submerged in diesel for 24 hours before cleaning.
+			\item Finally the gearbox was re-lubricated and assembled along with the other components of the filter cleaning machine. 
+			 
+		\end{itemize}
+		 
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=\textwidth]{gearbox.png}
+				\caption{Gearbox removal}
+				\label{fig:gearbox}
+			\end{figure}
+			
+		\newpage
+		\subsection{Boiler}
+		
+			\begin{figure}[H]
+				\centering				
+					\includegraphics[scale=0.8]{Boiler}
+				
+				\caption{Boiler diagram}
+				\label{fig:Boiler diagram}
+			\end{figure}
+			A boiler is a high pressure vessel used to produce steam or hot water.
+			Boilers consist of the following components.
+			\begin{enumerate}
+				\item Burner
+				\item Combustion chamber
+				\item Heat exchanger
+				\item Exhaust stack
+				\item Controls
+			\end{enumerate}
+			 The burner mixes the fuel and oxygen together, and with the assistance of an ignition device provides combustion. Combustion takes place in the combustion chamber, and heat that is generated is transferred to the water via the heat exchanger. The controls regulate the ignition, burner firing rate, fuel supply, exhaust draft, water temperature, water level, steam pressure, boiler pressure and feed water motors. The steam from boilers flow through piping from areas of high pressure to areas of low pressure without the aid of external pumps. Most commercial buildings use boilers for heating purposes or power generation. Heating source for boilers range from coal, wood, natural gas and oil fired burners to electric resistance heaters. The boilers used in Celogen Lanka are fire tube diesel boilers (see figure \ref{fig:inside-a-boiler}) which have a capacity of 1120 litres per hour. The main source of fuel used is High Speed Diesel.
+			 
+			 \newpage			  
+			 Boilers have the following advantages;
+			 \begin{itemize}
+				\item Long life span
+				\item Can achieve efficiencies upto 95 percent or greater.
+				\item An effective method of heating large buildings
+				\item Require little or no pumping energy in case of steam generation and transfer/supply.			 
+			 \end{itemize}
+			 
+			 \vspace{0.5cm}
+			 Boilers have the following disadvantages;
+			 \begin{itemize}
+				\item Fuel costs can be high.
+				\item Regular maintenance is required.
+				\item Repairs can be costly, if maintenance is delayed or neglected.			 	 \end{itemize}
+					  
+			\begin{figure}[H]
+				\centering				
+					\includegraphics[scale=0.64]{Boiler_inside.png}
+				\caption{Inside a boiler}
+				\label{fig:inside-a-boiler}
+			\end{figure}
+				
+				
+			
+			
+			\newpage
+			\subsection{Chiller}
+			
+			\begin{figure}[H]
+					\centering
+					\begin{subfigure}{0.7\textwidth}						
+						\centering						
+						\includegraphics[width=\textwidth]{pg125.png}
+				 		\label{subfig:trane-front-pg125}
+				 		\caption{Chiller front view}
+				 	\end{subfigure}
+				 	
+				 	\begin{subfigure}{0.7\textwidth}
+				 		\centering
+						\includegraphics[width=\textwidth]{pg126.png}				 									\label{subfig:trane-rear-pg126}
+						\caption{Chiller rear view}
+				 	\end{subfigure}
+				 	\label{fig:chiller}
+				 	\caption{Chiller}
+				\end{figure}
+				
+			The main function of a chiller is to remove heat away from  a building or facility by means of using air, water and a refrigerant.
+			There are various types of chillers, however there are two main types.
+			
+			\begin{enumerate}
+				\item Air cooled chillers
+				\item Water cooled chillers 
+			\end{enumerate}	
+			
+			The chiller consists of four main components.
+			\begin{itemize}
+				\item Compressor
+				\item Condenser
+				\item Expansion Valve
+				\item Evaporator
+			\end{itemize}
+			
+			Each component is part of a refrigerant cycle.
+			
+			%%Picture
+			
+			The Type of chiller can be determined by the type of compressor and method used to cool/remove heat from the condenser.
+			A Water cooled chiller uses water cooled by a cooling tower to remove heat from the condenser. An Air cooled chiller cools its condenser using cool air drawn-in using a fan.
+			
+			\subsubsection*{Theory of Operation}
+								
+				The pressure-enthalpy diagram in figure 107 can be used to explain the stages of the refrigerant cycle. 
+			
+			\begin{itemize}
+				\item Point 1 to Point 2 (Evaporation) - The refrigerant changes from a saturated liquid to a gas as it absorbs heat. The pressure and temperature of the refrigerant is constant since its only a phase change in the saturated region.
+				\item Point 2 to Point 3 (Compression) - The refrigerant is compressed thus increasing the temperature and the pressure of the refrigerant vapour.
+				\item Point 3 to Point 5 (Condensation) - The hot refrigerant vapour travels through a condenser and releases this heat by water supplied through a cooling tower or by cooled air drawn by a fan. The hot vapour (superheated) becomes a saturated vapour before becoming a sub cooled liquid at constant pressure. 
+				
+				\item Point 5 to Point 1 (Expansion) - The sub cooled refrigerant liquid then passes through an expansion valve, the vertical from (4) to (5) shows a drop in pressure and temperature. 		
+			\end{itemize}
+			
+				\begin{figure}[H]
+					\centering
+					\includegraphics[width=0.7\textwidth]{pg127.png}
+					\label{fig:pressure-enthalpy-curve}				
+					\caption{Enthalpy curve of the refrigerant cycle \citep{trane}}
+				\end{figure}
+				
+			The chillers produce chill water that is used to cool air in the AHU by circulating chill water through the cooling coil.
+			This chill water is circulated by a network of insulated piping.
+			The chill water system can be partmentalized into several sections.
+			
+			\begin{itemize}
+				\item Chiller section
+				\item Primary and Secondary Pumps
+				\item Cooling tower section
+				\item Load/AHUs			
+			\end{itemize}		
+			
+			First the condensers give out heat that is then absorbed by cold water which then becomes warm water that then flows to the cooling towers. The warm water is then cooled by the two cooling towers using forced air circulation. These cooling towers are also called "Induced Draft Cross Flow" cooling towers \cite{ct-1}\citep{ct-2}.
+			
+			The cooled water is pumped back via the cooling tower pumps into the condensers of the chillers and the cycle repeats.
+			
+			Chill water is supplied by circulating water through the evaporators of the chillers. The cool refrigerant of the evaporator absorbs heat from the water and converts to a refrigerant vapour. The chilled water is then pumped via the secondary pumps and then supplied to the AHUs.
+			The chill water absorbs heat from the chill water coils of the AHUs and return back to the evaporator before being pumped by the primary pumps.
+			Chill water supply lines are insulated using a non reflective rubber foam in order to prevent heat being absorbed prematurely before reaching the AHUs and before entering the evaporators.
+			
+				  
+			\newpage
+			\subsection{Air Compressors}
+				Celogen Lanka uses two air compressors (see figure \ref{fig:Utility Area} in page \pageref{fig:Utility Area}) to supply compressed air to the production and maintenance facility.
+				Both compressors are oil free, screw type dual stage air compressors which have a maximum capacity of around 20 cubic meters per minute and have a power consumption of 45kW. 
+				Air compressor 01 is a variable speed compressor while air compressor 02 is a fixed speed compressor.
+				Preventive maintenance of both compressors are done by Ingersoll Rand annually.
+				\begin{figure}[H]
+					\centering
+					\begin{subfigure}{0.5\textwidth}						
+						\centering						
+						\includegraphics[width=\textwidth]{compressor-1.png}
+				 		\label{subfig:compressor-1}
+				 		\caption{Variable speed compressor}
+				 	\end{subfigure}
+				 	\vfill
+				 	\vspace*{1cm}
+				 	\begin{subfigure}{0.5\textwidth}
+				 		\centering
+						\includegraphics[width=\textwidth]{compressor-2.png}				 					\label{subfig:compressor-2}
+						\caption{Fixed speed compressor}
+				 	\end{subfigure}
+				 	\label{fig:compressors-at-celogen}
+				 	\caption{Compressors used in Celogen Lanka}
+				\end{figure}
+				
+				First the surrounding air is sucked in through a vent using a large fan, the air is then filtered using a series of membranes and cartridge filters before being pressurized by the Low pressure screw compressor.
+				The pressurized air is cooled using an inter-cooler before being compressed by a high pressure screw compressor.
+				This pressurized air is cooled one final time through the same inter-cooler before being released as compressed air. 
+				The compressed air is stored in reserve tanks before it sent through a piping network throughout the factory.
+				Compressed air is used for many applications like powering pneumatic actuators, act as a propellant during the tablet coating process, cleaning purposes and used to power certain air powered tools.    
+				
+				\begin{figure}
+					\centering
+					\includegraphics[width=\linewidth]{compressor-working-principle.png}
+					\label{fig:compressor-working-principle}
+					\caption{Compressor working principle}
+				\end{figure}
+				
+				\begin{figure}
+					\centering
+					\includegraphics[width=0.5\linewidth]{pg130.png}
+					\label{fig:screw-compressor}
+					\caption{Screw compressor diagram\citep{trane}}
+				\end{figure}
+			
+			\newpage
+			
+	\section{Conclusion}
+		The experience gained during the 06 month internship has had a positive impact. Since it was an important opportunity to develop crucial practical skills.
+		It also exposed technologies and systems that were quite unknown in the beginning. One of the most important aspects of the training programme was safety and how to use the right tools in the right way to accomplish various tasks and how to maintain these tools properly so that they could be used reliably for a long period of time. Training supervisors also encouraged cleanliness and tidiness at all times which was looked upon as a skill and an indication of a quality work force.
+		Training at Celogen Lanka gave insights into how much care and precision it takes to manufacture high quality pharmaceutical products, and the challenges that have to be overcome by the individuals that make them.
+		One of the most important aspects that give the products its quality is the temperature and humidity at which it's manufactured hence the temperature and humidity is always monitored and maintained 24 hours a day and 7 days a week throughout the year. Exposure to documentation was quite important particularly SOPs, Design Qualifications, Installation Qualifications, Daily Log books, Preventive Maintenance schedules and Job cards etc.  
+	
+\bibliographystyle{apa}
+
+\bibliography{ref}	
+
+\end{document}
